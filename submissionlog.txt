@@ -1,0 +1,167 @@
+Wednesday 29th of May 2019 06:51:56 PM - New agent has been successfully added to the database: 
+Hilton  Cantos
+Phone: 430-094-0494
+Email: hcantos@travelexperts.ca
+Position: Coder
+Agency: 1
+
+Wednesday 29th of May 2019 06:59:45 PM - New agent has been successfully added to the database: 
+Bat  Man
+Phone: 767-767-7676
+Email: batman@travelexperts.ca
+Position: Travel Safety
+Agency: 1
+
+Wednesday 29th of May 2019 08:58:10 PM - New agent has been successfully added to the database: 
+Suzie  Q
+Phone: 444-444-4444
+Email: suziq@travelexperts.ca
+Position: Secretary
+Agency: 1
+
+Wednesday 29th of May 2019 09:09:11 PM - New agent has been successfully added to the database: 
+Steven  Spooner
+Phone: 111-222-3333
+Email: sspooner@travelexperts.ca
+Position: Data Inputter
+Agency: 2
+
+Wednesday 29th of May 2019 09:11:45 PM - New agent has been successfully added to the database: 
+Amy  Middleton
+Phone: 444-555-3333
+Email: amiddleton@traveltrue.com
+Position: Help Desk Support
+Agency: 2
+
+Wednesday 29th of May 2019 09:14:22 PM - New agent has been successfully added to the database: 
+Captain  Rick
+Phone: 666-555-4444
+Email: crick@travelheroes.com
+Position: Travel Captain
+Agency: 1
+
+Wednesday 29th of May 2019 09:15:50 PM - New agent has been successfully added to the database: 
+Captain  Rick
+Phone: 444-333-2222
+Email: crick@travel.com
+Position: Travel Captain
+Agency: 2
+
+Thursday 30th of May 2019 09:15:52 PM - New agent has been successfully added to the database: 
+Salimander  Crunch
+Phone: 444-0984
+Email: scrunch@travelgood.com
+Position: Photo Shower
+Agency: 2
+
+Friday 31st of May 2019 04:28:39 PM - New agent has been successfully added to the database: 
+George S Samuel
+Phone: 543-345-5432
+Email: gsamuel@gmail.com
+Position: Sales
+Agency: 2
+
+Friday 31st of May 2019 04:30:50 PM - New agent has been successfully added to the database: 
+Samuel G George
+Phone: 543-345-5432
+Email: sggeorge@travelexperts.com
+Position: Sales
+Agency: 1
+
+Friday 31st of May 2019 08:31:48 PM - New agent has been successfully added to the database: 
+Jay S Gervais
+Phone: 403-479-8693
+Email: mrjaygervais@gmail.com
+Position: Web Dev
+Agency: 2
+
+Friday 31st of May 2019 10:47:57 PM - New agent has been successfully added to the database: 
+Jay S Gervais
+Phone: 403-479-8693
+Email: mrjaygervais@gmail.com
+Position: Web Dev
+Agency: 2
+
+Friday 31st of May 2019 10:54:35 PM - New agent has been successfully added to the database: 
+Jay S Gervais
+Phone: 403-479-8693
+Email: mrjaygervais@gmail.com
+Position: Web Dev
+Agency: 1
+
+Friday 31st of May 2019 11:07:45 PM - New agent has been successfully added to the database: 
+Jay S Gervais
+Phone: 403-479-8693
+Email: mrjaygervais@gmail.com
+Position: Web Dev
+Agency: 2
+
+Friday 31st of May 2019 11:22:20 PM - New agent has been successfully added to the database: 
+Jay S Gervais
+Phone: 403-345-5432
+Email: mrjaygervais@gmail.com
+Position: Web
+Agency: 2
+
+Friday 31st of May 2019 11:34:39 PM - New agent has been successfully added to the database: 
+Jay S Gervais
+Phone: 403-479-8693
+Email: mrjaygervais@gmail.com
+Position: Web Developer
+Agency: 2
+
+Saturday 1st of June 2019 12:51:17 AM - New agent has been successfully added to the database: 
+Jay S Gervais
+Phone: 403-479-8693
+Email: mrjaygervais@gmail.com
+Position: Web
+Agency: 1
+
+Saturday 1st of June 2019 01:46:48 AM - New agent has been successfully added to the database: 
+Jay  G
+Phone: 403-345-5432
+Email: mrjaygervais@gmail.com
+Position: Web
+Agency: 1
+
+Saturday 1st of June 2019 01:51:47 AM - New agent has been successfully added to the database: 
+Jay S Gervais
+Phone: 403-479-8693
+Email: mrjaygervais@gmail.com
+Position: Web Dev
+Agency: 2
+
+Saturday 1st of June 2019 02:16:31 AM - New agent has been successfully added to the database: 
+Jay  Gervais
+Phone: 403-455-6543
+Email: jay@expert.com
+Position: Travel Captain
+Agency: 2
+
+Saturday 1st of June 2019 02:21:58 AM - New agent has been successfully added to the database: 
+Jay  Gervais
+Phone: 403-379-8693
+Email: mrjaygervais@gmail.com
+Position: Senior Web
+Agency: 2
+
+Saturday 1st of June 2019 02:27:34 AM - New agent has been successfully added to the database: 
+Chris  Smacker
+Phone: 434-432-3456
+Email: smaker@travel.com
+Position: Traveller
+Agency: 1
+
+Saturday 1st of June 2019 02:29:08 AM - New agent has been successfully added to the database: 
+Jay  Gervais
+Phone: 324-432-4325
+Email: jay@travelexpert.com
+Position: Worker
+Agency: 1
+
+Saturday 1st of June 2019 02:32:04 AM - New agent has been successfully added to the database: 
+Jay  Gervais
+Phone: 403-479-8693
+Email: jay@travelsite.com
+Position: Worker
+Agency: 1

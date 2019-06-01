@@ -1,0 +1,677 @@
+/*------------Masthead------------------*/
+
+.masthead {
+  height: 40vh;
+  min-height: 300px;
+  background-image: url('../img/beachrock.jpg');
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/*------------Navigation------------------*/
+
+nav {
+	-webkit-box-shadow: 0 8px 25px -15px black;
+		-moz-box-shadow: 0 8px 25px -15px black;
+			box-shadow: 0 8px 25px -15px black;
+	z-index: 9999;
+	background-color: #004b4f;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+nav li {
+	float: left;
+}
+
+nav li a {
+	display: block;
+	color: #d1d1d1;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+
+div.headerBtn {
+	display: block;
+	color: #d1d1d1;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	border-radius: 0px;
+	background-color: none;
+}
+
+
+nav li a:hover {
+	box-shadow: inset 0px 3px 10px rgba(0,0,0,0.5);
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Overlay navigation on mobile */
+
+@media screen and (max-width: 650px) {
+
+	.overlay {
+		height: 0%; 
+		width: 100%;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		background-color: #004b4f;
+		overflow-y: hidden;
+		transition: 0.5s; 
+	}
+
+	.overlay-content ul li {
+		position: relative;
+		top: 25%;
+	  	width: 100%;
+	  	text-align: center;
+	  	margin-top: 30px;
+	}
+
+	.overlay ul li a {
+	  padding: 8px;
+	  text-decoration: none;
+	  font-size: 36px;
+	  color: #d1d1d1;
+	  display: block;
+	  transition: 0.3s;
+	}
+
+	.overlay ul li a:hover {
+	  color: #fff;
+	}
+
+	.overlay .closebtn {
+	  text-decoration: none;
+	  color: #fff;
+	  top: 20px;
+	  right: 47px;
+	  font-size: 60px;
+	  z-index: 9999;
+	  align-content: right;
+	  padding-left: 27px;
+	}
+
+	#openNav {
+		display: block;
+		color: #fff;
+		padding: 14px 16px;
+		cursor: pointer;
+	}
+}
+
+@media screen and (min-width: 650px) {
+	#openNav {
+		display: none;
+	}
+	.closebtn {
+		display: none;
+	}
+}
+
+@media screen and (max-height: 650px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.urls {
+	max-width: 950px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+/*------------Main Styles------------------*/
+
+#header {
+	width: 100%;
+	padding-top: 13px;
+	padding-bottom: 117px;
+	background-image: url('../img/beach.jpg');
+	background-attachment: fixed;
+	background-position: center bottom;	
+	background-repeat: no-repeat;
+	background-size: cover;
+	transform-origin: bottom left;
+	margin-top: -8px;
+}
+
+footer {
+	background-color: #004b4f; 
+	color: white;
+    margin-bottom: -15px;
+    padding-top: 25px;
+	padding-bottom: 5px;
+}
+
+.footerupper {
+	background-color: #6f6e6933;
+	box-shadow: inset 0px 3px 10px rgba(0,0,0,0.5);
+}
+
+body {
+	background-image: url('../img/white-waves.png');
+	background-repeat: repeat;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 600;
+	margin-left: 0px;
+	margin-right: 0px;
+	overflow-x: hidden;
+}
+
+.padding-bottom {
+	padding-bottom: 75px;
+}
+
+.headertitle {
+	font-size: 50px;
+	text-shadow: 5px 1px 10px #000;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: -165px;
+}
+
+.headertitle:hover {
+	text-decoration: none;
+}
+
+img.logo {
+	width: 250px;
+	max-width: 100%;
+	margin-top: -100px;
+}
+
+@media screen and (max-width: 419px) {
+	.headertitle {
+		margin-top: -195px; 
+	}
+	img.logo {
+		margin-top: -65px;
+	}
+}
+
+.white-text {
+	color: white;
+}
+
+.center {
+	text-align: center;
+}
+
+.padding-top {
+	padding-top: 75px;
+}
+
+.container {
+	width: 950px;
+	max-width: 100%;
+}
+
+img.travelpics {
+	max-width: 32.9%;
+	border-radius: 15px;
+	transition: transform .45s;
+}
+
+@media only screen and (min-width: 531px) {
+	img.travelpics:hover {
+		transform: scale(1.75);
+	}
+}
+
+@media only screen and (max-width: 828px) {
+	img.travelpics {
+		max-width: 32.8%;
+	}
+}
+
+@media only screen and (max-width: 645px) {
+	img.travelpics {
+		max-width: 32.7%;
+	}
+}
+
+@media only screen and (max-width: 531px) {
+	img.travelpics {
+		max-width: 100%;
+	}
+}
+
+h3.imagelink {
+	font-family: 'Montserrat', sans-serif;
+    text-shadow: 5px 1px 10px #000;
+    color: #fff;
+    font-size: 40px;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 222px;
+}
+
+button.contactbtn {
+	background: linear-gradient( rgba(0, 50, 50, 1), rgba(0, 20, 30, 0.5) ), url('../img/contact.jpg');
+	background-size: cover;
+    width: 49.5%;
+    height: 80px;
+    font-size: 24px;
+    color: #fff;
+    text-shadow: 5px 1px 10px #000;
+    border-radius: 25px;
+}
+
+button.registerbtn {
+	background: linear-gradient( rgba(0, 50, 50, 1), rgba(0, 20, 30, 0.5) ), url('../img/map.jpg');
+	background-size: cover;
+	background-position: center;
+    width: 49.5%;
+    height: 80px;
+    font-size: 24px;
+    color: #fff;
+    text-shadow: 5px 1px 10px #000;
+    border-radius: 25px;
+}
+
+@media screen and (max-width: 481px) {
+	button.contactbtn {
+		width: 49.4%;
+	}
+	button.registerbtn {
+		width: 49.4%;
+	}
+}
+
+@media screen and (max-width: 408px) {
+	button.contactbtn {
+		width: 49.3%;
+	}
+	button.registerbtn {
+		width: 49.3%;
+	}
+}
+
+@media screen and (max-width: 357px) {
+	button.contactbtn {
+		width: 49%;
+	}
+	button.registerbtn {
+		width: 49%;
+	}
+}
+
+/*------------Registration Page------------------*/
+
+body#register {
+	background-image: url('../img/white-waves.png');
+	background-repeat: repeat;
+}
+
+.containerTwo {
+	max-width: 100%;
+	width: 950px;
+	margin: 0 auto;
+	padding-left: 25px
+	padding-right: 25px;
+	color: white;
+	border: 2px solid #958888;
+	border-radius: 20px;
+}
+
+.containerTwo h1 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.containerTwo p, td {
+	font-family: 'Quicksand', sans-serif;
+}
+
+.error {
+	font-family: 'Quicksand', sans-serif;
+	color: #cc0000;
+}
+
+.errorForm {
+	font-family: 'Quicksand', sans-serif;
+	color: #cc0000;
+	font-size: 130%;
+}
+
+.successForm {
+	font-family: 'Quicksand', sans-serif;
+	color: #008702;
+	font-size: 130%;
+}
+
+.loggedInForm {
+	font-family: 'Quicksand', sans-serif;
+	color: #fff;
+	font-size: 130%;
+}
+
+.backgroundclr {
+	background-color: black;
+	opacity: 0.75;
+	padding-top: 50px;
+	padding-left: 25px;
+	padding-right: 25px;
+	max-width: 100%
+	margin: 0 auto;
+	border-radius: 18px;
+}
+
+input[type="text"], input[type="tel"], input[type="textarea"], input[type="password"], input[type="email"], textarea, table, select {
+	width: 100%;
+	border-radius: 5px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+input[type="color"] {
+	border-radius: 5px;
+}
+
+input:focus, textarea:focus {
+	border: 2px solid #072c3a;
+	background-color: #e8e8e8;
+}
+
+button {
+	font-family: 'Montserrat', sans-serif;
+	padding-left: 25px;
+	padding-right: 25px;
+	border-radius: 5px;
+	transition: transform .2s;
+}
+
+button:hover {
+	transform: scale(1.05);
+	cursor: pointer;
+}
+
+form#registerForm {
+	padding-bottom: 50px;
+}
+
+.displaynone {
+	display: none;
+}
+
+@media screen and (min-height: 745px) {
+	td.widetd {
+		width: 80%;
+	}
+}
+
+td {
+	padding-bottom: 15px;
+}
+
+/*------------Image Array Loop (on Home Page)------------------*/
+
+#showImgs {
+	float:left; 
+	width:70%;
+}
+
+#imgRow {
+	padding-bottom: 75px;
+	float:left; 
+	width:30%;
+}
+
+#imgRow:hover {
+	cursor: pointer;
+}
+
+@media only screen and (max-width : 768px) {
+	#showImgs {
+		width:100%;
+		height: 500px;
+	}
+	#imgRow {
+		width: 100%;
+		padding-top: 20px;
+	}
+	li.imgSwitch {
+		display: block;
+		width: 100%;
+		padding-bottom: 5px;
+		padding-top: 5px;
+		padding-left: 0px;
+	}
+	#imgRow ul {
+		padding-left: 0px;
+		text-align: center;
+	}
+} 
+
+@media only screen and (max-width : 668px) {
+	#imgRow {
+		padding-top: 0px;
+	}
+}
+
+@media only screen and (max-width : 668px) {
+	#showImgs {
+		height: 455px;
+	}
+}
+
+@media only screen and (max-width : 486px) {
+	#showImgs {
+		height: 385px;
+	}
+}
+
+@media only screen and (max-width : 400px) {
+	#showImgs {
+		height: 320px;
+	}
+}
+
+img#changeImg {
+	width: 100%; 
+	border-radius: 15px;
+}
+
+.jsImgContainer {
+	padding-bottom: 70px;
+}
+
+.jsimagecontainer {
+	padding-bottom: 15px;
+}
+
+.imgSwitch:first-child {
+	border-top: 2px solid #002123; 
+}
+
+.imgSwitch {
+	list-style-type: none;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	border-bottom: 2px solid #002123;
+	padding-left: 10px;
+}
+
+.imgSwitch:hover {
+	/*background-color: #6f6e6933;*/
+	box-shadow: inset 0px 3px 10px rgba(0,0,0,0.5);
+}
+
+#airPlane {
+	position: absolute;
+	margin-left: -1450px;
+	width: 240px;
+	margin-top: -388px;
+}
+
+img#airPlane {
+	z-index: 2;
+}
+
+div.col-12.text-center {
+	z-index: 1;
+}
+
+/*------------Table Link PHP Loop Page------------------*/
+
+th {
+	font-size: 20px;
+}
+
+tr:hover {
+	box-shadow: inset 0px 3px 10px rgba(0,0,0,0.5);
+	border-radius: 15px;
+}
+
+thead.thead {
+	background-color: #6f6e6933;
+	box-shadow: inset 0px 3px 10px rgba(0,0,0,0.5);
+	border-radius: 15px;
+}
+
+table.table {
+	border: 2px solid #6f6e6933;
+	box-shadow: inset 0px 3px 10px rgba(0,0,0,0.5);
+	border-radius: 15px;
+}
+
+/*------------Morning Banner------------------*/
+
+.banner {
+	width: 100%;
+	height: 200px;
+	background-size: cover;
+	margin-bottom: 75px;
+	border-radius: 15px;
+}
+
+h1.welcomeText {
+	text-align: center;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	padding-top: 68px;
+	font-size: 55px;
+	text-shadow: 5px 1px 10px #000;
+}
+
+@media only screen and (max-width : 468px) {
+	h1.welcomeText {
+		padding-top: 35px;
+	}
+}
+
+form#addAgentForm {
+	padding-bottom: 50px;
+}
+
+form#userLoginForm {
+	padding-bottom: 50px;
+}
+
+/*------------insert-agent page------------------*/
+
+p.confirm {
+	color: #008702;
+	padding-bottom: 25px;
+	font-size: 30px;
+}
+
+p.fail {
+	color: #890000;
+	padding-bottom: 25px;
+	font-size: 30px;
+}
+
+p.addanother {
+	font-size: 25px;
+}
+
+.agentcard {
+	padding-left: 50px;
+	padding-bottom: 25px;
+}
+
+/*------------agent page------------------*/
+
+button.addagnt {
+	background: linear-gradient( rgba(0, 50, 50, 1), rgba(0, 20, 30, 0.5) ), url('../img/bridge.jpg');
+	background-size: cover;
+	background-position: center;
+    width: 49.5%;
+    height: 80px;
+    font-size: 24px;
+    color: #fff;
+    text-shadow: 5px 1px 10px #000;
+    border-radius: 25px;
+}
+
+/*------------logout page------------------*/
+
+button.logoutbutton {
+	background: linear-gradient( rgba(0, 50, 50, 1), rgba(0, 20, 30, 0.5) ), url('../img/bridge.jpg');
+	color: #fff;
+	border-radius: 10px;
+}
+
+p.welcome {
+	font-size: 120%;
+}
+
+.welcomemsg {
+	background-color: #fff;
+	border-radius: 25px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 30px;
+	margin-bottom: -20px;
+	opacity: 0.85;
+	-webkit-box-shadow: 0 8px 25px -15px black;
+		-moz-box-shadow: 0 8px 25px -15px black;
+			box-shadow: 0 8px 25px -15px black;
+}
+
+.margin-bottom {
+	margin-bottom: 75px;
+}
+
+form#userLogoutMsg {
+	padding-bottom: 35px;
+}
+
+div.welcomemsg.margin-bottom {
+	opacity: 0.75;
+}
+
+.borderedimgs {
+	width: 100%;
+	border-radius: 15px;
+}
+
+@media only screen and (max-width : 767px) {
+	h1.small-pt {
+		padding-top: 25px;
+	}
+}
