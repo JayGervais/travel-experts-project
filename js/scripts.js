@@ -58,3 +58,10 @@ function airplaneAnimate() {
   }
 }
 
+function confirmDelete() {
+  if(confirm('Are you sure you want to delete your account?')) {
+    return true;
+  } else {
+    return false;
+  }
+}

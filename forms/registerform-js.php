@@ -62,4 +62,4 @@
 		<button type="reset" value="reset" onClick="return clearData();">Reset</button></td>
 	</table>
 
-	</form>
+</form>

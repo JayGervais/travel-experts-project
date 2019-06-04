@@ -333,7 +333,7 @@ function validateRegistrationForm(form) {
     var descriptionTip = document.getElementById("descriptionTip");
 
     if(document.hasFocus()) {
-      descriptionTip.innerHTML = "Add some details about yourself";
+      descriptionTip.innerHTML = "Add some details about the trip of your dreams";
     }
   }
 
@@ -545,8 +545,30 @@ function checkAgentFirstName() {
     if(Password == "") {
       passwordError.innerHTML = "Password is required *";
       return false;
+    }
+
+    if(Password.length < 6) {
+      passwordError.innerHTML = "Password must be 6 characters or more";
+      return false
     } else {
       passwordError.classList.add("displaynone");
+    }
+  }
+
+    function checkAgentPassword2() {
+    var Password = document.getElementById("password").value;
+    var Password2 = document.getElementById("password2").value;
+    var passwordError2 = document.getElementById("passwordError2");
+
+    if(Password2 == "") {
+      passwordError2.innerHTML = "Password must be added again *";
+      return false;
+    } 
+
+    if(Password2 !== Password) {
+      passwordError2.innerHTML = "Passwords do not match"
+    } else {
+      passwordError2.classList.add("displaynone");
     }
 
   }

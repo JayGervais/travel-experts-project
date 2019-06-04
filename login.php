@@ -13,15 +13,15 @@ include 'includes/functions.php';
 
 		if(!empty($_POST["login"])) {
 
-			$useremail = trim($_POST['useremail']);
-			$password = trim($_POST['password']);
+			$useremail = trim(htmlspecialchars($_POST['useremail']));
+			$password = trim(htmlspecialchars($_POST['password']));
 
 			$pass_query = mysqli_query($conn, "SELECT password FROM agents WHERE AgtEmail='$useremail'");
-		    $pass = mysqli_fetch_assoc($pass_query);
+		    $pass = mysqli_fetch_array($pass_query);
 		    $hashed = $pass['password']; 
 
-		    if(md5($password) === $hashed) {
-		   // if(password_verify($password, $hashed)) {
+		   	if(password_verify($password, $hashed)) {
+		   		
 				$result = mysqli_query($conn, "SELECT * FROM agents WHERE AgtEmail='" . $useremail . "'");
 				$row  = mysqli_fetch_assoc($result);
 
@@ -29,7 +29,7 @@ include 'includes/functions.php';
 					$_SESSION["AgentId"] = $row['AgentId'];
 				}
 			} else {
-				$message = "<p class='errorForm'>Invalid Email or Password</p>";				
+				$message = "<p class='errorForm'>Invalid Email or Password</p>";
 				}
 			}
 

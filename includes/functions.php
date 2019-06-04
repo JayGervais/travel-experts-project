@@ -27,7 +27,7 @@ function insertAgent($conn) {
 	$agency = testdata($_POST['agency']);
 	$password = testdata(md5($_POST['password']));
 
-	$agentArray[] = array(
+	$agentArray = array(
 			'AgentId' => '',
 			'AgtFirstName' => $firstname,
 			'AgtMiddleInitial' => $middlename,
@@ -87,6 +87,33 @@ function insertAgent($conn) {
     		<p class="addanother"><a href='addagent.php'>Go back...</a></p>
     	<?php }
 	}
+
+}
+
+
+function insertDbGeneric($table_name, $form_data) {
+
+	$form_data = array(
+			'AgentId' => '',
+			'AgtFirstName' => $firstname,
+			'AgtMiddleInitial' => $middlename,
+			'AgtLastName' => $lastname,
+			'AgtBusPhone' => $phone,
+			'AgtEmail' => $email,
+			'AgtPosition' => $position,
+			'AgencyId' => $agency,
+			'password' => $password
+		);
+
+	$table_name = "agents";
+
+	$fields = array_keys($form_data);
+
+	$sql = "INSERT INTO ".$table_name."(`".implode('`,`', $fields)."`) VALUES ('".implode("','", $form_data)."')";
+
+	return mysqli_query($sql);
+
+
 
 }
 

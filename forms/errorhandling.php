@@ -8,6 +8,7 @@ $emailErr = "";
 $positionErr = "";
 $agencyErr = "";
 $passwordErr = "";
+$passwordErr2 = "";
 
 //empty regular variables
 $firstname = "";
@@ -18,6 +19,7 @@ $email = "";
 $position = "";
 $agency = "";
 $password = "";
+$password2 = "";
 
 // if form is submitted
 if($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -30,6 +32,7 @@ $phone = $_POST['phone'];
 $email = $_POST['email'];
 $position = $_POST['position'];
 $agency = $_POST['agency'];
+$password = $_POST['password'];
 
 	// error checking submission
 	if(empty($firstname)) {
@@ -95,6 +98,14 @@ $agency = $_POST['agency'];
 
 	if(empty($password)) {
 		$passwordErr = "Password is Required";
+	} else {
+		$password = testdata($password);
+	}
+
+	if(empty($password2)) {
+		$passwordErr2 = "You need to add your password again";
+	} else if($password2 !== $password) {
+		$passwordErr2 = "Passwords must match";
 	} else {
 		$password = testdata($password);
 	}

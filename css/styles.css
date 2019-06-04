@@ -675,3 +675,9 @@ div.welcomemsg.margin-bottom {
 		padding-top: 25px;
 	}
 }
+
+button.delete {
+	float: right;
+	font-size: 80%;
+	color: #840000;
+}

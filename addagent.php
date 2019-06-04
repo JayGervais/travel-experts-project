@@ -1,16 +1,14 @@
 <?php 
 include 'includes/header.php'; 
-include 'forms/errorhandling.php'; ?>
-<?php  
-$result = mysqli_query($conn, "SELECT * FROM agents WHERE AgentId='" . $_SESSION['AgentId'] . "'");
-$row = mysqli_fetch_assoc($result);
-$userFName = $row['AgtFirstName'];
-$userLName = $row['AgtLastName'];
+include 'forms/errorhandling.php'; 
+include 'includes/classes/User.php';
+
+$user = new User($conn, $userId);
 ?>
 <div class="padding-top padding-bottom">
 
 	<div class="welcomemsg margin-bottom">
-		<p class="welcome">Thank you for logging in, <?php echo $userFName . " " . $userLName; ?>. You can now add new agents to the database.</p>
+		<p class="welcome">Thank you for logging in, <?php echo $user->userFName() . " " . $user->userLName(); ?>. You can now add new agents to the database or edit your <a href="edit-agent.php">account information.</a></p>
 		<form action="" method="post" name="userLogoutMsg" id="userLogoutMsg">
 			<button type="submit" name="logout" value="Logout" class="logoutbutton">Logout</button>
 		</form>	

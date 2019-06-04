@@ -165,3 +165,31 @@ Phone: 403-479-8693
 Email: jay@travelsite.com
 Position: Worker
 Agency: 1
+
+Tuesday 4th of June 2019 05:10:32 PM -  to the database: 
+  
+Phone: 
+Email: 
+Position: 
+Agency: 
+
+Tuesday 4th of June 2019 05:12:34 PM - New Agent has been added to the database: 
+  
+Phone: 
+Email: 
+Position: 
+Agency: 
+
+Tuesday 4th of June 2019 05:13:23 PM - New Agent has been added to the database: 
+George s geore
+Phone: 432-432-4324
+Email: george@travel.ca
+Position: travel
+Agency: 2
+
+Tuesday 4th of June 2019 06:31:40 PM - New Agent has been added to the database: 
+George s Georgy
+Phone: 444-333-4456
+Email: georygeorge@george.com
+Position: Travel
+Agency: 2
