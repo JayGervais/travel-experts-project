@@ -8,7 +8,7 @@ $user = new User($conn, $userId);
 <div class="padding-top padding-bottom">
 
 	<div class="welcomemsg margin-bottom">
-		<p class="welcome">Thank you for logging in, <?php echo $user->userFName() . " " . $user->userLName(); ?>. You can now add new agents to the database or edit your <a href="edit-agent.php">account information.</a></p>
+		<p class="welcome">Thank you for logging in, <?php echo $user->userFName() . " " . $user->userLName(); ?>. You can now add new agents to the database or edit your <a href="edit-agent.php">account information</a>.</p>
 		<form action="" method="post" name="userLogoutMsg" id="userLogoutMsg">
 			<button type="submit" name="logout" value="Logout" class="logoutbutton">Logout</button>
 		</form>	

@@ -10,8 +10,6 @@ if(!isset($_SESSION['AgentId'])) {
 	<div class="padding-top padding-bottom">
 		
 		<?php  
-
-
 		$agent = new Agent();
 		//$agent->insertAgent($conn);
 
