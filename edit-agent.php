@@ -9,10 +9,9 @@ $user = new User($conn, $userId);
 ?>
 
 <div class="padding-top padding-bottom">
-
 	<div class="containerTwo">
-
 		<div class="backgroundclr">
+			
 			<h1>Edit Details</h1>
 			<p>Edit your information or delete your account</p><br>
 			
