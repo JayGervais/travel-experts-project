@@ -6,7 +6,7 @@ include 'includes/header.php';
 	<div class="containerTwo">
 
 		<div class="backgroundclr">
-			<h1>Register for a Trip!</h1>
+			<h1>Register for an Account</h1>
 			<p>We have the most pricey packages for the most ritzy kinds of folks!</p><br>
 			<?php include 'forms/registerform-js.php'; ?>
 		</div><!-- /backgroundclr -->

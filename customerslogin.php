@@ -63,7 +63,7 @@ include 'includes/header.php';
           // echo "<br>".$rows;
              if($rows==1){//0 false 1 true
                   echo "you r in!!";
-                   header('Location:index1.php'); //redirct to main page
+                   header('Location:index.php'); //redirct to main page
                    exit;
              }else{
                 echo "wrong username or passowrd ";

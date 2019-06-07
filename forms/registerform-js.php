@@ -1,5 +1,5 @@
 <!-- Registration Form with JS Error Handling -->
-<form action="insertCustomers.php" onsubmit="return validateRegistrationForm(this);" method="post" name="registerForm" id="registerForm">
+<form action="insert-customer.php" onsubmit="return validateRegistrationForm(this);" method="post" name="registerForm" id="registerForm">
 
 	<p id="formError" class="errorForm"></p>
 	<table>
@@ -34,16 +34,16 @@
 			<span id="provinceError" class="error"></span></td>
 	</tr>
 	<tr>
-	<td>* Postal Code</td>
-		<td class="widetd"><span id="postalCodeTip" class="tip"></span>
-			<input type="text" onfocus="postalCodeTip()" onblur="checkPostalCode()" id="postalcode" name="CustPostal" maxlength="50" />
-			<span id="postalCodeError" class="error"></span></td>
-	</tr>
 	<tr>
 	<td>* Country</td>
 		<td class="widetd"><span id="countryTip" class="tip"></span>
 			<input type="text" onfocus="countryTip()" onblur="checkCountry()" id="country" name="CustCountry" maxlength="50" />
 			<span id="countryError" class="error"></span></td>
+	</tr>
+	<td>* Postal Code</td>
+		<td class="widetd"><span id="postalCodeTip" class="tip"></span>
+			<input type="text" onfocus="postalCodeTip()" onblur="checkPostalCode()" id="postalcode" name="CustPostal" maxlength="50" />
+			<span id="postalCodeError" class="error"></span></td>
 	</tr>
 	<tr>
 	<td>* Home Phone Number</td>
@@ -53,9 +53,9 @@
 	</tr>
 	<tr>
 	<td>* Buniness Phone Number</td>
-		<td class="widetd"><span id="phoneTip" class="tip"></span>
-			<input type="tel" onfocus="phoneTip()" onblur="checkPhone()" id="phone" name="CustBusPhone" />
-			<span id="phoneError" class="error"></span></td>
+		<td class="widetd"><span id="phone2Tip" class="tip"></span>
+			<input type="tel" onfocus="phone2Tip()" onblur="checkPhone2()" id="phone2" name="CustBusPhone" />
+			<span id="phone2Error" class="error"></span></td>
 	</tr>
 
 	<tr>
@@ -63,6 +63,20 @@
 		<td class="widetd"><span id="emailTip" class="tip"></span>
 			<input type="email" onfocus="emailTip()" onblur="checkEmail()" id="email" name="CustEmail" maxlength="50" />
 			<span id="emailError" class="error"></span></td>
+	</tr>
+
+	<tr>
+	<td>Password *</td>			
+		<td class="widetd"><span id="passwordTip" class="tip"></span>
+			<input type="password" id="password" name="password" onblur="checkAgentPassword()" onfocus="passwordTip()" maxlength="50" />
+			<span class="error" id="passwordError"></span></td>
+	</tr>
+
+	<tr>
+	<td>Password Again *</td>			
+		<td class="widetd"><span id="password2Tip" class="tip"></span>
+			<input type="password" id="password2" name="password2" onblur="checkAgentPassword2()" onfocus="password2Tip()" maxlength="50" />
+			<span class="error" id="passwordError2"></span></td>
 	</tr>
 
 <!--	<tr>

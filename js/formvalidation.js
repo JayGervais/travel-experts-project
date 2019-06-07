@@ -95,17 +95,43 @@ function validateRegistrationForm(form) {
 
     // --<[ Validate Phone Number Field ]>----------------------- /
     if(Phone == "") {
-      phoneError.innerHTML = "Phone number is required *";
+      phoneError.innerHTML = "Home phone number is required *";
       return false;
     }
 
     if(phoneResult == false) {
-      phoneError.innerHTML = "Please add a valid phone number";
+      phoneError.innerHTML = "Please add a valid home phone number";
       return false;
     }
 
     if(phoneResult == true) {
       phoneError.classList.add("displaynone");
+      return true;
+    }
+  }
+
+  function checkPhone2() {
+
+    var Phone2 = document.getElementById("phone2").value;
+    var phone2Error = document.getElementById("phone2Error");
+    var phone2Regex = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+    var phone2Result = phone2Regex.test(Phone2);
+
+    document.getElementById("phone2Tip").innerHTML = "";
+
+    // --<[ Validate Phone Number Field ]>----------------------- /
+    if(Phone2 == "") {
+      phone2Error.innerHTML = "Business phone number is required *";
+      return false;
+    }
+
+    if(phone2Result == false) {
+      phone2Error.innerHTML = "Please add a valid business phone number";
+      return false;
+    }
+
+    if(phone2Result == true) {
+      phone2Error.classList.add("displaynone");
       return true;
     }
   }
@@ -209,9 +235,31 @@ function validateRegistrationForm(form) {
       provinceError.innerHTML = "Please add a valid province";
       return false;
     }
+  }
 
-    if(provinceResult == true) { 
-      provinceError.classList.add("displaynone");
+    function checkCountry() {
+
+  // Get form inputs ----------------------- /
+    var Country = document.getElementById("country").value;
+    var countryError = document.getElementById("countryError");
+    var lettersRegex = /^[A-Za-z]+$/;
+    var countryResult = lettersRegex.test(Country);
+
+    document.getElementById("countryTip").innerHTML = "";
+
+    // --<[ Validate country Field ]>----------------------- /
+    if(Country == "") {
+      countryError.innerHTML = "Country is required *";
+      return false;
+    }
+
+    if(countryResult == false) {
+      countryError.innerHTML = "Please add a valid country";
+      return false;
+    }
+
+    if(countryResult == true) { 
+      countryError.classList.add("displaynone");
       return true;
     }
 
@@ -285,7 +333,15 @@ function validateRegistrationForm(form) {
     var phoneTip = document.getElementById("phoneTip");
 
     if(document.hasFocus()) {
-      phoneTip.innerHTML = "Add your phone number";
+      phoneTip.innerHTML = "Add your home phone number";
+    }
+  }
+
+  function phoneTip2() {
+    var phoneTip2 = document.getElementById("phoneTip2");
+
+    if(document.hasFocus()) {
+      phoneTip.innerHTML = "Add your business phone number";
     }
   }
 
@@ -321,6 +377,14 @@ function validateRegistrationForm(form) {
     }
   }
 
+  function countryTip() {
+    var countryTip = document.getElementById("countryTip");
+
+    if(document.hasFocus()) {
+      countryTip.innerHTML = "Add your country";
+    }
+  }
+
   function postalCodeTip() {
     var postalCodeTip = document.getElementById("postalCodeTip");
 
@@ -334,6 +398,22 @@ function validateRegistrationForm(form) {
 
     if(document.hasFocus()) {
       descriptionTip.innerHTML = "Add some details about the trip of your dreams";
+    }
+  }
+
+  function passwordTip() {
+    var passwordTip = document.getElementById("passwordTip");
+
+    if(document.hasFocus()) {
+      passwordTip.innerHTML = "Create a password";
+    }
+  }
+
+  function password2Tip() {
+    var password2Tip = document.getElementById("password2Tip");
+
+    if(document.hasFocus()) {
+      password2Tip.innerHTML = "Add password again";
     }
   }
 
