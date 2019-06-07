@@ -1,5 +1,5 @@
-<?php 
-include_once 'global.php'; 
+<?php
+include_once 'global.php';
 include_once 'connect.php';
 include_once 'components/sessions.php';
 ?>
@@ -45,7 +45,7 @@ include_once 'components/sessions.php';
 					<li><a href="<?php echo $linksPage; ?>"><i class="fas fa-link"></i> Links</a></li>
 					<li><a href="<?php echo $agents; ?>"><i class="fas fa-address-card"></i> Agents</a></li>
 					<li><a href="<?php echo $packages; ?>"><i class="fas fa-plane"></i> Packages</a></li>
-					<!-- <li><a href="<?php echo $login; ?>"><?php echo $loginLogo; ?></a></li> -->
+					<li><a href="<?php echo $custLogin; ?>"><i class="fas fa-sign-in-alt"></i> CustLogin</a></li>
 				</ul>
 			</div>
 		</div>
