@@ -14,9 +14,9 @@ include 'includes/functions.php';
 				<div class="card">
 		  			<div class="card-body">
 					<h3 class="card-title"><?php echo $row['AgtFirstName'] . " " . $row['AgtLastName']; ?></h3>
-					<p>Phone: <?php echo $row['AgtBusPhone']; ?></p>
-					<p>Email: <?php echo $row['AgtEmail']; ?></p>
-					<p>Position: <?php echo $row['AgtPosition']; ?></p>
+					<p class="details">Phone: <?php echo $row['AgtBusPhone']; ?></p>
+					<p class="details">Email: <?php echo $row['AgtEmail']; ?></p>
+					<p class="details">Position: <?php echo $row['AgtPosition']; ?></p>
 					</div>
 		  		</div>
 			</div><!-- /animation-element slide-up -->

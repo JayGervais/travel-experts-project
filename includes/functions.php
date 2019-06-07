@@ -113,8 +113,6 @@ function insertDbGeneric($table_name, $form_data) {
 
 	return mysqli_query($sql);
 
-
-
 }
 
 ?>

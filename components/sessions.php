@@ -12,7 +12,7 @@ if(!empty($_POST["logout"])) {
 if(!isset($_SESSION['AgentId'])) {
 	$loginLogo = "<i class='fas fa-sign-in-alt'></i> Agent Login";
 } else {
-	$loginLogo = "<i class='fas fa-sign-out-alt'></i> Logout";
+	$loginLogo = "<i class='fas fa-sign-out-alt'></i> Dashboard";
 	$userId = $_SESSION['AgentId'];
 }
 ?>
