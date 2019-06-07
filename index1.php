@@ -5,7 +5,6 @@
 <?php  
 // set banners/welcome message based on time of day
 // Set timezone to MST
-date_default_timezone_set("US/Mountain");
 // Set $hour to current hour
 $hour = date("H:i");
 

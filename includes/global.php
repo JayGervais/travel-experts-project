@@ -5,6 +5,10 @@ $registerPage = "register.php";
 $contactPage = "contact.php";
 $linksPage = "links.php";
 $agents = "agents.php";
+$packages = "packages.php";
 $addAgent = "addagent.php";
 $login = "login.php";
+
+// timezone
+date_default_timezone_set("US/Mountain");
 ?>

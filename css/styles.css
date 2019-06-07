@@ -681,3 +681,41 @@ button.delete {
 	font-size: 80%;
 	color: #840000;
 }
+
+/*------------Packages Page------------------*/
+
+p.dates {
+	font-weight: lighter;
+	font-size: 85%;
+	opacity: 0.65;
+}
+
+.price {
+	color: #989897;
+}
+
+span.date-warning {
+	color: #a50000;
+	font-weight: bolder;
+}
+
+.card {
+	width: 100% !important;
+	margin-bottom: 30px;
+	border-radius: 25px;
+}
+
+.card-img-top {
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+}
+
+.btn-primary {
+	background-color: #004b4f !important;
+	border-color: #004b4f !important;
+}
+
+.btn-primary:hover {
+	background-color: #A1591F !important;
+	border-color: #A1591F !important;
+}

@@ -1,4 +1,4 @@
-<!-- Registration Form with JS Error Handling -->
+<!-- Registration Form with JS Error Handling -->b
 <form action="insert-agent.php" onsubmit="return validateAddAgentForm(this)" method="post" name="addAgentForm" id="addAgentForm" name="addAgentForm"> 
 	
 	<p id="formError" class="errorForm"></p>
