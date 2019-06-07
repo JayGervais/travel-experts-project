@@ -719,3 +719,7 @@ span.date-warning {
 	background-color: #A1591F !important;
 	border-color: #A1591F !important;
 }
+
+.agntloginlink {
+	float: right;
+}

@@ -7,7 +7,7 @@ $linksPage = "links.php";
 $agents = "agents.php";
 $packages = "packages.php";
 $addAgent = "addagent.php";
-$login = "login.php";
+$login = "agent-login.php";
 
 // timezone
 date_default_timezone_set("US/Mountain");
