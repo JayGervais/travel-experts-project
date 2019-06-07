@@ -1,4 +1,4 @@
-<?php 
+<?php
 // primary page links
 $homePage = "index.php";
 $registerPage = "register.php";
@@ -7,7 +7,7 @@ $linksPage = "links.php";
 $agents = "agents.php";
 $packages = "packages.php";
 $addAgent = "addagent.php";
-$login = "login.php";
+$login = "customerslogin.php";
 
 // timezone
 date_default_timezone_set("US/Mountain");
