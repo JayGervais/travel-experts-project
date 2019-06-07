@@ -8,6 +8,7 @@ $agents = "agents.php";
 $packages = "packages.php";
 $addAgent = "addagent.php";
 $login = "agent-login.php";
+$custLogin = "customerslogin.php";
 
 // timezone
 date_default_timezone_set("US/Mountain");
