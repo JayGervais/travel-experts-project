@@ -1,13 +1,13 @@
 <?php
 function agentData($conn) {
-	$query = "SELECT AgentId, AgtFirstName, AgtLastName, AgtBusPhone, AgtEmail, AgtPosition, AgencyId, password FROM agents";
+	$query = "SELECT * FROM agents";
 	$result = $conn->query($query);
 	$resArr = array();
 
 	while($row = $result->fetch_assoc()) {
 		$resArr[] = $row;
-	} 
-	return $resArr;		
+	}
+	return $resArr;
 }
 
 function testdata($data) {
@@ -49,10 +49,10 @@ function insertAgent($conn) {
     	}
 
     	$query = substr($query,0,-1); // remove last comma
-    	
+
     	$result = mysqli_query($conn, $query) or die(mysql_error());
 
-    	if($result) { 
+    	if($result) {
 
     		$confirmMsg = "New agent has been successfully added";
 
@@ -73,7 +73,7 @@ function insertAgent($conn) {
 	    		</p>
     		</div>
     		<p class="addanother"><a href='addagent.php'>Add another agent...</a></p>
-    	<?php } else { 
+    	<?php } else {
 
     		$failMsg = "Could not insert into database";
 
