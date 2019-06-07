@@ -10,23 +10,25 @@ include 'includes/header.php';
 		$packageResult = $conn->query($sql);
 
 	    while($package = $packageResult->fetch_assoc()) {
-				$packageId = $package['PackageId'];
-				$packageName = $package['PkgName'];
-				$packageStartDateDB = $package['PkgStartDate'];
-				$packageEndDateDB = $package['PkgEndDate'];
-				$packageDescription = $package['PkgDesc'];
-				$packageImage = $package['PkgImage'];
-				$packageBasePrice = $package['PkgBasePrice'];
-				$packageAgencyCommission = $package['PkgAgencyCommission'];
+			$packageId = $package['PackageId'];
+			$packageName = $package['PkgName'];
+			$packageStartDateDB = $package['PkgStartDate'];
+			$packageEndDateDB = $package['PkgEndDate'];
+			$packageDescription = $package['PkgDesc'];
+			$packageImage = $package['PkgImage'];
+			$packageBasePrice = $package['PkgBasePrice'];
+			$packageAgencyCommission = $package['PkgAgencyCommission'];
 
-				// format dates
-				$packageStartDate = date_format(new DateTime($packageStartDateDB), 'd/m/Y');
-				$packageEndDate = date_format(new DateTime($packageEndDateDB), 'd/m/Y');
+			// format dates
+			$packageStartDate = date_format(new DateTime($packageStartDateDB), 'd/m/Y');
+			$packageEndDate = date_format(new DateTime($packageEndDateDB), 'd/m/Y');
 
-				// check if end date passed
-				if(date_format(new DateTime($packageEndDateDB), 'Y/m/d') >= date_format(new DateTime(), 'Y/m/d')) {
-				?>
-				<div class="col-md-6 col-sm-12">
+			// check if end date passed
+			if(date_format(new DateTime($packageEndDateDB), 'Y/m/d') >= date_format(new DateTime(), 'Y/m/d')) {
+			?>
+			<div class="col-md-6 col-sm-12">
+
+			<div class="animation-element slide-up">
 
 		    	<div class="card" style="width: 18rem;">
 				  <img class="card-img-top" src="img/<?php echo $packageImage; ?>" alt="<?php echo $packageName; ?>">
@@ -44,6 +46,7 @@ include 'includes/header.php';
 				    <a href="order.php?id=<?php echo $packageId; ?>" class="btn btn-primary">Buy Package</a>
 				  </div>
 				</div>
+			</div><!-- /animation-element slide-up -->
 
 			</div>
 			<?php 

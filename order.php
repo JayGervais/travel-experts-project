@@ -32,7 +32,7 @@ include 'includes/functions.php';
 	<div class="row">
 
 	  <div class="col-lg-4">
-        	<!-- <h1 class="my-4">Order Details</h1> -->
+        <div class="animation-element slide-up">
         	<div class="card">
 	          <img class="card-img-top img-fluid" src="img/<?php echo $packageImage; ?>" alt="">
 	          <div class="card-body">
@@ -49,22 +49,23 @@ include 'includes/functions.php';
 	            <p class="card-text"><?php echo $packageDescription; ?></p>
 	          </div>
 	        </div>
+	       </div><!-- /animation-element slide-up -->
 
-
-
-      </div><!-- /.col-lg-3 -->
+      </div><!-- /.col-lg-4 -->
 		
       <div class="col-lg-8">
 			<!-- Add form Below -->
-			<div class="containerTwo">
-				<div class="backgroundclr">
-					<h1>Complete your Order</h1>
-					<p>Fill out the information below</p><br>
-					<?php include 'forms/order-form.php'; ?>
-				</div><!-- /containerTwo -->
-			</div><!-- /backgroundclr -->
+			<div class="animation-element slide-up">
+				<div class="containerTwo">
+					<div class="backgroundclr">
+						<h1>Complete Your Order</h1>
+						<p>Fill out the information below to purchase your dream vacation</p><br>
+						<?php include 'forms/order-form.php'; ?>
+					</div><!-- /containerTwo -->
+				</div><!-- /backgroundclr -->
+			</div><!-- /animation-element slide-up -->
 
-      </div><!-- /.col-lg-9 -->
+      </div><!-- /.col-lg-8 -->
 	</div><!-- /row -->
 
 </div><!-- /padding-top padding-bottom -->

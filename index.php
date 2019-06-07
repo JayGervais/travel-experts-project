@@ -1,6 +1,7 @@
 <?php include 'includes/header.php'; ?>
 
 <div class="padding-top">
+<div class="animation-element slide-up">
 
 <?php  
 // set banners/welcome message based on time of day
@@ -39,12 +40,12 @@ if ($hour <= "12:00") { ?>
 	<img class="travelpics" src="img/camels.jpg">
 	<img class="travelpics" src="img/beach.jpg">
 	<img class="travelpics" src="img/train.jpg">
-	
+
 	<p class="pt-5 pb-5">We're excited to sell you a vacation! If you like seeing new things, you'll love a vacation. Vacations are the best! We can send you anywhere in the world. We can even make a decision for you on where to go. Whether you want relaxing, entertaining, or dangerously exciting, we can help you out. We are the Travel Experts.</p>
 
 	</div><!-- /padding-top -->
 </div><!-- /container -->	
-
+</div><!-- /animation-element slide-up -->
 <div class="padding-top padding-bottom footerupper">
 
 	<div class="container">
