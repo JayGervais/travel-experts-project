@@ -31,7 +31,7 @@ include 'includes/header.php';
 			<div class="animation-element slide-up">
 
 		    	<div class="card" style="width: 18rem;">
-				  <img class="card-img-top" src="img/<?php echo $packageImage; ?>" alt="<?php echo $packageName; ?>">
+				  <img class="card-img-top" src="<?php echo $packageImage; ?>" alt="<?php echo $packageName; ?>">
 				  <div class="card-body">
 				    <h5 class="card-title"><?php echo $packageName; ?></h5>
 				    <p class="dates"><strong>Start Date:</strong> <?php 

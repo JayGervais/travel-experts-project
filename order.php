@@ -34,7 +34,7 @@ include 'includes/functions.php';
 	  <div class="col-lg-4">
         <div class="animation-element slide-up">
         	<div class="card">
-	          <img class="card-img-top img-fluid" src="img/<?php echo $packageImage; ?>" alt="">
+	          <img class="card-img-top img-fluid" src="<?php echo $packageImage; ?>" alt="">
 	          <div class="card-body">
 	            <h3 class="card-title"><?php echo $packageName; ?></h3>
 	            <p class="dates"><strong>Start Date:</strong> <?php 

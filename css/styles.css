@@ -124,9 +124,9 @@ nav li a:hover {
 
 @media screen and (max-height: 650px) {
   .overlay {overflow-y: auto;}
-  .overlay a {font-size: 20px}
+  /*.overlay a {font-size: 20px}*/
   .overlay .closebtn {
-  font-size: 40px;
+  /*font-size: 40px;*/
   top: 15px;
   right: 35px;
   }
@@ -729,6 +729,7 @@ a.agntloginlink {
 	opacity: 0.75;
 	border: 2px solid #004b4f;
 	padding: 10px;
+	margin-right: 5px;
 	border-bottom-left-radius: 15px;
 	border-bottom-right-radius: 15px;
 	border-top: 0;
@@ -750,6 +751,15 @@ a.agntloginlink:hover {
 
 p.details {
 	margin-bottom: 0rem !important;
+}
+
+form#addPackageForm {
+	padding-bottom: 50px;
+}
+
+.insertPkgImg {
+	width: 100%;
+	max-width: 350px;
 }
 
 /* ------------Fade-in Animation-------------- */

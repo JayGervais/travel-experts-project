@@ -652,3 +652,163 @@ function checkAgentFirstName() {
     }
 
   }
+
+  function checkPackageName() {
+
+    var packageName = document.getElementById("packagename").value;
+    var packageNameError = document.getElementById("packageNameError");
+    var packageNameRegex = /^[-.: A-Za-z0-9]*$/;
+    var packageNameResult = packageNameRegex.test(packageName);
+
+   // document.getElementById("descriptionTip").innerHTML = "";
+
+    // --<[ Validate Description Field ]>----------------------- /
+    if(packageName == "") {
+      packageNameError.innerHTML = "Package name must be added *";
+      return false;
+    } 
+    if(packageNameResult == false) {
+      packageNameError.innerHTML = "Please only use standard English text";
+    
+    } else {
+      packageNameError.classList.add("displaynone");
+      return true;
+    }
+  }
+
+  function checkPackageStartDate() {
+
+    var checkPackageStartDate = document.getElementById("packagestartdate").value;
+    var packageStartDateError = document.getElementById("packageStartDateError");
+    var packageStartDateRegex = /^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/;
+    var packageStartDateResult = packageStartDateRegex.test(checkPackageStartDate);
+
+   // document.getElementById("descriptionTip").innerHTML = "";
+
+    // --<[ Validate Description Field ]>----------------------- /
+    if(checkPackageStartDate == "mm/dd/yyyy") {
+      packageStartDateError.innerHTML = "Start date must be added *";
+    } 
+    if(checkPackageStartDate == false) {
+      packageStartDateError.innerHTML = "Please add a valid date";
+    } else {
+      packageStartDateError.classList.add("displaynone");
+      return true;
+    }
+  }
+
+  function checkPackageEndDate() {
+
+    var checkPackageEndDate = document.getElementById("packageenddate").value;
+    var packagEndDateError = document.getElementById("packageEndDateError");
+    var packageEndDateRegex = /^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/;
+    var packageEndDateResult = packageEndDateRegex.test(checkPackageEndDate);
+
+   // document.getElementById("descriptionTip").innerHTML = "";
+
+    // --<[ Validate Description Field ]>----------------------- /
+    if(checkPackageEndDate == "mm/dd/yyyy") {
+      packageEndDateError.innerHTML = "End date must be added *";
+    } 
+    if(checkPackageEndDate == false) {
+      packageEndDateError.innerHTML = "Please add a valid date";
+    } else {
+      packageEndDateError.classList.add("displaynone");
+      return true;
+    }
+  }
+
+  function checkPackageDescription() {
+
+    var packageDescription = document.getElementById("packagedescription").value;
+    var packageDescriptionError = document.getElementById("packageDescriptionError");
+    var packageDescriptionRegex = /^[_A-z0-9]*((-|\s|')*[_A-z0-9])*$/;
+    var packageDescriptionResult = packageDescriptionRegex.test(packageDescription);
+
+   // document.getElementById("descriptionTip").innerHTML = "";
+
+    // --<[ Validate Description Field ]>----------------------- /
+    if(packageDescription == "") {
+      packageDescriptionError.innerHTML = "Package description is required *";
+      return false;
+    } 
+    if(packageDescriptionResult == false) {
+      packageDescriptionError.innerHTML = "Please only use standard English text";
+    
+    } else {
+      packageDescriptionError.classList.add("displaynone");
+      return true;
+    }
+  }
+
+  function checkPackageImage() {
+
+    var packageImage = document.getElementById("packageimage").value;
+    var packageImageError = document.getElementById("packageImageError");
+
+   // document.getElementById("descriptionTip").innerHTML = "";
+
+    // --<[ Validate Image Field ]>----------------------- /
+    if(packageImage == "") {
+      packageImageError.innerHTML = "Package image is required *";
+      return false;
+    }
+  }
+
+  function checkPackageBasePrice() {
+
+    var packageBasePrice = document.getElementById("packagebaseprice").value;
+    var packageBasePriceError = document.getElementById("packageBasePriceError");
+    var packageBasePriceRegex = /^\d+(\.\d{1,2})?$/;
+    var packageBasePriceResult = packageBasePriceRegex.test(packageBasePrice);
+
+   // document.getElementById("descriptionTip").innerHTML = "";
+
+    // --<[ Validate Image Field ]>----------------------- /
+    if(packageBasePrice == "") {
+      packageBasePriceError.innerHTML = "Base Price is required *";
+    }
+    if(packageBasePriceResult === false) {
+      packageBasePriceError.innerHTML = "Must add a number";
+    } else {
+      packageBasePriceError.classList.add("displaynone");
+      return true;
+    }
+  }
+
+  function checkPackageCommission() {
+
+    var packageCommission = document.getElementById("packagecommission").value;
+    var packageCommissionError = document.getElementById("packageCommissionError");
+    var packageCommissionRegex = /^\d+(\.\d{1,2})?$/;
+    var packageCommissionResult = packageCommissionRegex.test(packageCommission);
+
+   // document.getElementById("descriptionTip").innerHTML = "";
+
+    // --<[ Validate Image Field ]>----------------------- /
+    if(packageCommission == "") {
+      packageCommissionError.innerHTML = "Base Price is required *";
+    }
+    if(packageCommissionResult === false) {
+      packageCommissionError.innerHTML = "Must add a number";
+    } else {
+      packageCommissionError.classList.add("displaynone");
+      return true;
+    }
+  }
+
+  function validateAddPackageForm(form) {
+
+    var packageName = document.getElementById("packagename").value;
+    var packageStartDate = document.getElementById("packagestartdate").value;
+    var packageEndDate = document.getElementById("packageenddate").value;
+    var packageDescription = document.getElementById("packagedescription").value;
+    var packageImage = document.getElementById("packageimage").value;
+    var packageBasePrice = document.getElementById("packagebaseprice").value;
+    var packageCommission = document.getElementById("packagecommission").value;
+
+  if(packageName == "" || packageStartDate == "" || packageEndDate == "" || packageDescription =="" || packageImage =="" || packageBasePrice == "" || packageCommission == "") {
+    formError.innerHTML = "Please fill out all required fields (shown with *)";
+    return false;
+  }
+}

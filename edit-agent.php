@@ -6,8 +6,9 @@ include 'includes/classes/User.php';
 
 // new User class
 $user = new User($conn, $userId);
-?>
 
+include 'includes/agent-dashboard-nav.php';
+?>
 <div class="padding-top padding-bottom">
 	<div class="containerTwo">
 		<div class="backgroundclr">

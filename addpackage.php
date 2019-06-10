@@ -22,9 +22,9 @@ include 'includes/agent-dashboard-nav.php';
 
 	<div class="containerTwo">
 		<div class="backgroundclr">
-			<h1>Add an Agent</h1>
-			<p>Add a new agent to the Travel Experts database</p><br>
-			<?php include 'forms/add-agent-form.php'; ?> 
+			<h1>Add A Package</h1> 
+			<p>Add a new travel package to the database</p><br>
+			<?php include 'forms/add-package-form.php'; ?> 
 		</div><!-- /backgroundclr -->
 	</div><!-- /containerTwo -->
 
