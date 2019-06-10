@@ -722,7 +722,7 @@ function checkAgentFirstName() {
 
     var packageDescription = document.getElementById("packagedescription").value;
     var packageDescriptionError = document.getElementById("packageDescriptionError");
-    var packageDescriptionRegex = /^[_A-z0-9]*((-|\s|')*[_A-z0-9])*$/;
+    var packageDescriptionRegex = /^[_A-z0-9]*((-|\s|'|.)*[_A-z0-9])*$/;
     var packageDescriptionResult = packageDescriptionRegex.test(packageDescription);
 
    // document.getElementById("descriptionTip").innerHTML = "";

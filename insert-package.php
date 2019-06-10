@@ -1,7 +1,7 @@
 <?php 
 include 'includes/header.php'; 
 //include 'includes/classes/Agent.php';
-//include 'includes/functions.php'; 
+include 'includes/functions.php'; 
 
 if(!isset($_SESSION['AgentId'])) {
 	header("Location: login.php");
@@ -10,14 +10,6 @@ if(!isset($_SESSION['AgentId'])) {
 	<div class="padding-top padding-bottom">
 		
 	<?php
-
-		function testdata($data) {
-		  $data = trim($data);
-		  $data = stripslashes($data);
-		  $data = htmlspecialchars($data);
-		  return $data;
-		}
-
 		$table = "packages";
 
 		$packagename = testdata($_POST['packagename']);
