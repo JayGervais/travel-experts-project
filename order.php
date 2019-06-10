@@ -27,7 +27,6 @@ include 'includes/functions.php';
 
 				$packageTotal = ($packageBasePrice * 0.05) + $packageBasePrice;
 		}
-
 	?>
 	<div class="row">
 
