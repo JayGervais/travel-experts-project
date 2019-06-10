@@ -30,33 +30,33 @@ function closeNav() {
 
 // --------------------<[ Animate airplane element ]>--------------- /
 
-window.onload = function() { airplaneAnimate() };
+// window.onload = function() { airplaneAnimate() };
 
-function airplaneAnimate() {
-  var airplane = document.getElementById("airPlane");
-  var pos = -1750;
-  var id = setInterval(frame, 10);
+// function airplaneAnimate() {
+//   var airplane = document.getElementById("airPlane");
+//   var pos = -1750;
+//   var id = setInterval(frame, 10);
 
-  function frame() {
-    if (pos == 1500) {
+//   function frame() {
+//     if (pos == 1500) {
 
-      var fadeEffect = setInterval(function () {
-              if (!airplane.style.opacity) {
-                  airplane.style.opacity = 1;
-              }
-              if (airplane.style.opacity > 0) {
-                  airplane.style.opacity -= 0.01;
-              } else {
-                  clearInterval(fadeEffect);
-              }
-          }, 1500);
+//       var fadeEffect = setInterval(function () {
+//               if (!airplane.style.opacity) {
+//                   airplane.style.opacity = 1;
+//               }
+//               if (airplane.style.opacity > 0) {
+//                   airplane.style.opacity -= 0.01;
+//               } else {
+//                   clearInterval(fadeEffect);
+//               }
+//           }, 1500);
 
-    } else {
-      pos++;
-      airplane.style.marginLeft = pos + 'px';
-    }
-  }
-}
+//     } else {
+//       pos++;
+//       airplane.style.marginLeft = pos + 'px';
+//     }
+//   }
+// }
 
 function confirmDelete() {
   if(confirm('Are you sure you want to delete your account?')) {

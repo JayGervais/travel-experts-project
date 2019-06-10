@@ -35,7 +35,7 @@ if ($hour <= "12:00") { ?>
 
 	</div><!-- /jsImgContainer -->
 
-	<img src="img/jetplane.png" id="airPlane">
+	<!-- <img src="img/jetplane.png" id="airPlane"> -->
 
 	<img class="travelpics" src="img/camels.jpg">
 	<img class="travelpics" src="img/beach.jpg">
