@@ -147,7 +147,7 @@ nav li a:hover {
 
 /*------------Agent Dashboard Nav------------------*/
 
-nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.static-top {
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
 	border-bottom-left-radius: 15px;
 	border-bottom-right-radius: 15px;
 }

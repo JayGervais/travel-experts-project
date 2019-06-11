@@ -1,14 +1,14 @@
 // --------------------<[ Sticky navigation ]>--------------- /
 $(document).ready(function() {
-  var stickyNavTop = $('nav').offset().top;
+  var stickyNavTop = $('#mainNav').offset().top;
 
   var stickyNav = function(){
     var scrollTop = $(window).scrollTop();
 
     if (scrollTop > stickyNavTop) { 
-      $('nav').addClass('fixed');
+      $('#mainNav').addClass('fixed');
     } else {
-      $('nav').removeClass('fixed'); 
+      $('#mainNav').removeClass('fixed'); 
     }
   };
 

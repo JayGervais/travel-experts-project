@@ -13,6 +13,7 @@ include 'includes/agent-dashboard-nav.php';
 ?>
 <div class="padding-top padding-bottom">
 
+<div class="animation-element slide-up">
 	<div class="containerTwo">
 		<div class="backgroundclr">
 			<h1>Add A Package</h1> 
@@ -20,6 +21,7 @@ include 'includes/agent-dashboard-nav.php';
 			<?php include 'forms/add-package-form.php'; ?> 
 		</div><!-- /backgroundclr -->
 	</div><!-- /containerTwo -->
+</div>
 
 </div><!-- /padding-top padding-bottom -->
 <?php include 'includes/footer.php'; ?>

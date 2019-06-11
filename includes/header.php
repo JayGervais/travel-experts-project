@@ -32,7 +32,7 @@ include_once 'components/sessions.php';
   </div>
 </header>
 <!-- Main Navigation -->
-<nav>
+<nav id="mainNav">
 	<div class="urls">
 		<span id="openNav" onclick="openNav()">&#9776;</span>
 		<div id="myNav" class="overlay">

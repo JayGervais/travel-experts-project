@@ -3,8 +3,8 @@ include 'includes/header.php';
 //include 'includes/functions.php';
 ?>
 <div class="padding-top padding-bottom">
-	<div class="containerTwo">
-
+	
+  <div class="containerTwo">
 		<div class="backgroundclr">
       <h1>Customer Login</h1>
         <p>Log in to your account</p><br>
