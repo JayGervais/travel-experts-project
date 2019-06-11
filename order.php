@@ -25,7 +25,8 @@ include 'includes/functions.php';
 				$packageStartDate = date_format(new DateTime($packageStartDateDB), 'd/m/Y');
 				$packageEndDate = date_format(new DateTime($packageEndDateDB), 'd/m/Y');
 
-				$packageTotal = ($packageBasePrice * 0.05) + $packageBasePrice;
+				// calculate GST
+				//$packageTotal = ($packageBasePrice * 0.05) + $packageBasePrice;
 		}
 	?>
 	<div class="row">
@@ -43,8 +44,7 @@ include 'includes/functions.php';
 					    	echo $packageStartDate; 
 						}?><br>
 				    	<strong>End Date:</strong> <?php echo $packageEndDate; ?></p>
-	            <p class="price">$<?php echo number_format((float)$packageBasePrice, 2, '.', ''); ?> + GST (5%)</span></p>
-	            <h4><span class="price">Total:</span> $<?php echo number_format((float)$packageTotal, 2, '.', ''); ?></h4>
+	            	<h4><span class="price">Total:</span> $<?php echo number_format((float)$packageBasePrice, 2, '.', ','); ?></h4>
 	            <p class="card-text"><?php echo $packageDescription; ?></p>
 	          </div>
 	        </div>

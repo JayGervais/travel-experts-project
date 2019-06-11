@@ -42,7 +42,7 @@ include 'includes/header.php';
 						}?><br>
 				    	<strong>End Date:</strong> <?php echo $packageEndDate; ?></p>
 				    <p class="card-text"><?php echo $packageDescription; ?></p>
-				    <p class="price">$<?php echo number_format((float)$packageBasePrice, 2, '.', ''); ?></p>
+				    <p class="price">$<?php echo number_format((float)$packageBasePrice, 2, '.', ','); ?></p>
 				    <a href="order.php?id=<?php echo $packageId; ?>" class="btn btn-primary">Buy Package</a>
 				  </div>
 				</div>

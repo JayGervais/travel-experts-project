@@ -60,4 +60,5 @@ if ($hour <= "12:00") { ?>
 
 	</div><!-- /container -->
 </div><!-- /pt-pb-fu -->
+<script src="js/imgarray.js"></script>
 <?php include 'includes/footer.php'; ?>

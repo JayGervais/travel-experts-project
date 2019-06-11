@@ -145,6 +145,13 @@ nav li a:hover {
 	margin: 0 auto;
 }
 
+/*------------Agent Dashboard Nav------------------*/
+
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.static-top {
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+
 /*------------Main Styles------------------*/
 
 #header {
@@ -658,8 +665,24 @@ p.welcome {
 }
 
 form#userLogoutMsg {
-	padding-bottom: 35px;
+	/*padding-bottom: 35px;*/
 }
+
+input#logoutbtn {
+	background:none;
+     color:inherit;
+     border:none; 
+     padding:0!important;
+     font: inherit;
+     cursor: pointer;
+     color: #727272; 
+ }
+
+ #userLogoutMsg {
+ 	color: #727272;
+ 	margin-top: 8px;
+    padding-left: 8px; 
+ }
 
 div.welcomemsg.margin-bottom {
 	opacity: 0.75;
