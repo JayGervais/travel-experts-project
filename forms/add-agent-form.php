@@ -51,8 +51,8 @@
 		<td class="widetd">
 			<select id="agency" name="agency" onblur="checkAgentAgency()" value="Choose an Angency" maxlength="50" />
 				<option label=" " value="">Select an Option</option>
-				<option value="1">1</option>
-				<option value="2">2</option>
+				<option value="1">Calgary</option>
+				<option value="2">Okotoks</option>
 			</select>
 			<span class="error" id="agencyError"></span></td>
 			</td>

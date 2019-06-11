@@ -10,9 +10,9 @@ if(!empty($_POST["logout"])) {
 }
 
 if(!isset($_SESSION['AgentId'])) {
-	$loginLogo = "<i class='fas fa-sign-in-alt'></i> Agent Login";
+	$loginLogo = "<i class='fas fa-address-card'></i> Agent Login";
 } else {
-	$loginLogo = "<i class='fas fa-sign-out-alt'></i> Dashboard";
+	$loginLogo = "<i class='fas fa-address-card'></i> Agent Dashboard";
 	$userId = $_SESSION['AgentId'];
 }
 ?>
