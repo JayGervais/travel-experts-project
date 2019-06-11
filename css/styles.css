@@ -664,10 +664,6 @@ p.welcome {
 	margin-bottom: 75px;
 }
 
-form#userLogoutMsg {
-	/*padding-bottom: 35px;*/
-}
-
 input#logoutbtn {
 	background:none;
      color:inherit;
