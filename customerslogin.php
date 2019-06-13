@@ -5,7 +5,7 @@ include 'includes/header.php';
 <p class="agntloginlink"><a href="<?php echo $login; ?>" class="agntloginlink"><?php echo $loginLogo; ?></a></p>
 
 <div class="padding-top padding-bottom">
-	
+
   <div class="containerTwo">
 		<div class="backgroundclr">
       <h1>Customer Login</h1>
@@ -57,7 +57,7 @@ include 'includes/header.php';
                 die("can't connect".mysql_error());//error
             }
 
-      $sql = "select * from user where username = '$username' and password='$passowrd'";
+      $sql = "select * from customers where CustEmail = '$username' and password='$passowrd'";
           //   print($sql)."<br>";
             $result = mysqli_query($con,$sql);//get result
           //  print_r($result)."<br>";
