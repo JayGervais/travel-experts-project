@@ -1,3 +1,5 @@
+Project Overview:
+
 workshop 1 
 Build an HTML page that will be the entry page for your travel website.  There should be some information about the agency, a menu that provides links to other pages, and any other features that you would like to include that will make your site look professional.
  
@@ -31,3 +33,24 @@ Required scripts:
 2.	Re-design the contact page so that it is generated from the database and lists all the agencies, showing the agency address and phone number, followed by the contact information for each agent at that agency.
 3.	When the package list is being generated, create an order button next to each package which will go to an order page that has a customer order form for that package.  Customers will enter their data and submit the order which will result in creation of a customer record and a booking record.  We know this is overly simplified, but at this point we are demonstrating that we can capture remote orders into the database to demonstrate the concept to the Travel Experts managers.
 4.	If your team has 4 members, design an additional feature that you feel would be useful for the site.
+
+Execution:
+
+Our group consists of Kai Feng, Duwa Enabulele, James Francis, and Jay Gervais.
+
+We all had separate projects going into the assignment and decided to choose only one to continue working on. We started working on the Travel Experts website from Jay and assigned tasks to each group member to meet the assignment requirements that were not yet encorporated into the project.
+
+Below is a breakdown of the tasks each group member was assigned:
+
+Jay – (Section 1) 3. & Part of (Section 2.) 3. Complete a vacation package page with dynamically inserted information page listing all vacation packages available. This will be a static page at this time, but will be enhanced later to be dynamically generated from a database. This could be located on the Main page if your team decides that it would be a better design. 
+
+Modify the web page that lists the packages available. Instead of providing package data that is statically coded in the HTML, insert PHP code that will read the database and generate the package list from the travel package table. Each package should display a description, start and end dates, and price. Before including a package on the page, make sure that the package end date is greater than (or equal to) the current date, so only valid packages are listed. Also, check whether the package start date is less than the current date, and if it is, write out some CSS to make the start date bold and red. 
+ 
+Kai – (Section 1) 4. Customer Registration 
+A “Customer Registration” page that will allow a customer to set up an account with Travel Experts by entering their name, address (including city, province, country, and postal code), email address, home phone number, business phone number, user ID, and password, which will be used, after verification, to establish an account for future orders. The data will be submitted to a test page (use bouncer.php) at this point, but this page will be enhanced later to become an order page with server-side scripting and database access. 
+ 
+James (Section 2) 2. - Redesign contact page 
+Re-design the contact page so that it is generated from the database and lists all the agencies, showing the agency address and phone number, followed by the contact information for each agent at that agency. 
+ 
+Duwa – Create order page
+When the package list is being generated, create an order button next to each package which will go to an order page (Jay will create the button from the Travel Package page and order page template). Customers will enter their data and submit the order which will result in creation of a customer record and a booking record. We know this is overly simplified, but at this point we are demonstrating that we can capture remote orders into the database to demonstrate the concept to the Travel Experts managers.
