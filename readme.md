@@ -45,6 +45,8 @@ Below is a breakdown of the tasks each group member was assigned:
 Jay – (Section 1) 3. & Part of (Section 2.) 3. Complete a vacation package page with dynamically inserted information page listing all vacation packages available. This will be a static page at this time, but will be enhanced later to be dynamically generated from a database. This could be located on the Main page if your team decides that it would be a better design. 
 
 Modify the web page that lists the packages available. Instead of providing package data that is statically coded in the HTML, insert PHP code that will read the database and generate the package list from the travel package table. Each package should display a description, start and end dates, and price. Before including a package on the page, make sure that the package end date is greater than (or equal to) the current date, so only valid packages are listed. Also, check whether the package start date is less than the current date, and if it is, write out some CSS to make the start date bold and red. 
+
+Additional: Jay completed a section that enables Travel Agents to upload new packages within the Travel Agents dashboard.
  
 Kai – (Section 1) 4. Customer Registration 
 A “Customer Registration” page that will allow a customer to set up an account with Travel Experts by entering their name, address (including city, province, country, and postal code), email address, home phone number, business phone number, user ID, and password, which will be used, after verification, to establish an account for future orders. The data will be submitted to a test page (use bouncer.php) at this point, but this page will be enhanced later to become an order page with server-side scripting and database access. 
