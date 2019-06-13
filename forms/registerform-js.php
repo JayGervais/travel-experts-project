@@ -3,7 +3,7 @@
 
 	<p id="formError" class="errorForm"></p>
 	<table>
-		
+
 	<tr>
 	<td>* First Name</td>
 		<td class="widetd"><span id="firstNameTip" class="tip"></span>
@@ -75,14 +75,14 @@
 	</tr>
 
 	<tr>
-	<td>Password *</td>			
+	<td>Password *</td>
 		<td class="widetd"><span id="passwordTip" class="tip"></span>
-			<input type="password" id="password" name="password" onblur="checkAgentPassword()" onfocus="passwordTip()" maxlength="50" />
+			<input type="password" id="password" name="CustPassword" onblur="checkAgentPassword()" onfocus="passwordTip()" maxlength="50" />
 			<span class="error" id="passwordError"></span></td>
 	</tr>
 
 	<tr>
-	<td>Password Again *</td>			
+	<td>Password Again *</td>
 		<td class="widetd"><span id="password2Tip" class="tip"></span>
 			<input type="password" id="password2" name="password2" onblur="checkAgentPassword2()" onfocus="password2Tip()" maxlength="50" />
 			<span class="error" id="passwordError2"></span></td>

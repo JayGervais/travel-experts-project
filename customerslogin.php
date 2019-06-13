@@ -1,8 +1,8 @@
 <?php
 include 'includes/header.php';
-//include 'includes/functions.php';
+include 'includes/functions.php';
 ?>
-<p class="agntloginlink"><a href="<?php echo $login; ?>" class="agntloginlink"><?php echo $loginLogo; ?></a></p>
+<p class="agntloginlink"><a href="<?php echo $custLogin; ?>" class="agntloginlink"><?php echo $loginLogo; ?></a></p>
 
 <div class="padding-top padding-bottom">
 
@@ -21,15 +21,15 @@ include 'includes/header.php';
 <form action="" method="post" name="userLoginForm" id="userLoginForm">
     <table>
   	<tr>
-  	<td>User Name</td>
+  	<td>User Email</td>
   		<td class="widetd">
-  			<input type="text" id="username" name="username" onblur="userName()" maxlength="50" />
+  			<input type="text" id="username" name="useremail"  maxlength="50" />
   			<span class="error" id="userNameError"></span></td>
   	</tr>
   	<tr>
   	<td>Password</td>
   		<td class="widetd">
-  			<input type="password" id="password" name="password" onblur="loginPassword()" maxlength="50" />
+  			<input type="password" id="password" name="password" maxlength="50" />
   		<span class="error" id="passwordError"></span></td>
   	</tr>
   	<tr>
@@ -47,7 +47,7 @@ include 'includes/header.php';
     }//check sumbit
 
 //    include('connect.php');  */
-    $username = $_POST['username'];//post get username
+    $useremail = $_POST['useremail'];//post get username
     $passowrd = $_POST['password'];//post get password
 
     if ($username && $passowrd){//
@@ -57,7 +57,7 @@ include 'includes/header.php';
                 die("can't connect".mysql_error());//error
             }
 
-      $sql = "select * from customers where CustEmail = '$username' and password='$passowrd'";
+      $sql = "SELECT * FROM customers WHERE CustEmail = '$useremail' AND CustPassword ='$passowrd' ";
           //   print($sql)."<br>";
             $result = mysqli_query($con,$sql);//get result
           //  print_r($result)."<br>";
