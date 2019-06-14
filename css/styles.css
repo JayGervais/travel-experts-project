@@ -425,7 +425,7 @@ form#registerForm {
 	display: none;
 }
 
-@media screen and (min-height: 745px) {
+@media screen and (min-width: 745px) {
 	td.widetd {
 		width: 70%;
 	}
@@ -852,4 +852,12 @@ form#addPackageForm {
   -webkit-animation-name: slide-up;
 }
 
-/* ---------------- */
+/* --------Order Page-------- */
+
+table.orderForm td {
+	width: 35%;
+}
+
+td.op60 {
+	opacity: 60%;
+}

@@ -9,7 +9,7 @@ include 'includes/header.php';
 			<div class="backgroundclr">
 				<h1>Register for an Account</h1>
 				<p>We have the most pricey packages for the most ritzy kinds of folks!</p><br>
-				<?php include 'forms/registerform-js.php'; ?>
+				<?php include 'forms/registerform2.php'; ?>
 			</div><!-- /backgroundclr -->
 		</div><!-- /containerTwo -->
 		

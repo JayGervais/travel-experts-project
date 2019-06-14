@@ -1,5 +1,5 @@
 <?php  
-class Agent {
+class CustomerAccount {
 	private $customerId;
 	private $customerFirstName;
 	private $customerLastName;
@@ -23,13 +23,13 @@ class Agent {
 		$this->customerAddress = isset($_POST['customerAddress']) ? $_POST['customerAddress'] : null;
 		$this->customerCity = isset($_POST['customerCity']) ? $_POST['customerCity'] : null;
 		$this->customerProvince = isset($_POST['customerProvince']) ? $_POST['customerProvince'] : null;
-		$this->customerPostalCode = isset($_POST['customerPostalCode']) ? $_POST['customerPostalCode'] : null;
 		$this->customerCountry = isset($_POST['customerCountry']) ? $_POST['customerCountry'] : null;
+		$this->customerPostalCode = isset($_POST['customerPostalCode']) ? $_POST['customerPostalCode'] : null;
 		$this->customerHomePhone = isset($_POST['customerHomePhone']) ? $_POST['customerHomePhone'] : null;
 		$this->customerBusinessPhone = isset($_POST['customerBusinessPhone']) ? $_POST['customerBusinessPhone'] : null;
 		$this->customerEmail = isset($_POST['customerEmail']) ? $_POST['customerEmail'] : null;
-		$this->$customerPW = isset($_POST['password']) ? $_POST['password'] : null;
-		$this->$customerPW2 = isset($_POST['password2']) ? $_POST['password2'] : null;
+		$this->customerPW = isset($_POST['customerPW']) ? $_POST['customerPW'] : null;
+		$this->customerPW2 = isset($_POST['customerPW2']) ? $_POST['customerPW2'] : null;
 
 		function testdata($data) {
 		  $data = trim($data);
@@ -144,7 +144,7 @@ class Agent {
 			die("Connection failed: " . $conn->connect_error);
 		}
 
-		$createCustomerQuery = "INSERT INTO customers (CustFirstName, CustLastName, CustAddress, CustCity, CustProv, CustPostal, CustCountry, CustHomePhone, CustBusPhone, CustEmail, CustPassword) VALUES ('$this->customerFirstName', '$this->customerLastName', '$this->customerAddress', '$this->customerCity', '$this->customerProvince', '$this->customerPostalCode', '$this->customerCountry', '$this->customerHomePhone', '$this->customerBusinessPhone', '$this->customerEmail', $this->customerPW)";
+		$createCustomerQuery = "INSERT INTO customers (CustFirstName, CustLastName, CustAddress, CustCity, CustProv, CustPostal, CustCountry, CustHomePhone, CustBusPhone, CustEmail, CustPassword) VALUES ('$this->customerFirstName', '$this->customerLastName', '$this->customerAddress', '$this->customerCity', '$this->customerProvince', '$this->customerPostalCode', '$this->customerCountry', '$this->customerHomePhone', '$this->customerBusinessPhone', '$this->customerEmail', '$this->customerPW')";
 		
     	if ($conn->query($createCustomerQuery) === TRUE) { 
     		echo "<p class='confirm'>You have successfully created an account</p>";
@@ -162,7 +162,7 @@ class Agent {
 
 		$id = $_SESSION['CustomerId'];
 
-		$updateAgentQuery = "UPDATE customers SET CustFirstName='$this->customerFirstName', CustLastName='$this->customerLastName', CustAddress='$this->customerAddress', CustCity='$this->customerCity', CustProv='$this->customerProvince', CustPostal='$this->customerPostalCode', CustCountry='$this->customerCountry', CustHomePhone='$this->customerHomePhone', CustBusPhone='this->customerBusinessPhone', CustEmail='$this->customerEmail', CustPassword='$this->customerPW'";
+		$updateAgentQuery = "UPDATE customers SET CustFirstName='$this->customerFirstName', CustLastName='$this->customerLastName', CustAddress='$this->customerAddress', CustCity='$this->customerCity', CustProv='$this->customerProvince', CustPostal='$this->customerPostalCode', CustCountry='$this->customerCountry', CustHomePhone='$this->customerHomePhone', CustBusPhone='$this->customerBusinessPhone', CustEmail='$this->customerEmail', CustPassword='$this->customerPW'";
 		
     	if ($conn->query($updateCustomerQuery) === TRUE) { 
     		echo "<p class='confirm'>Your information has been successfully updated</p>";

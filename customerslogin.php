@@ -97,6 +97,4 @@ include 'includes/header.php';
 	</div><!-- /containerTwo -->
 
 </div><!-- /padding-top padding-bottom -->
-<?php
-include 'includes/footer.php';
-?>
+<?php include 'includes/footer.php'; ?>

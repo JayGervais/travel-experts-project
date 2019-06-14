@@ -58,6 +58,4 @@ $sql = "SELECT * FROM agencies";
 	</div><!-- /row -->
 	
 </div><!-- /padding-top padding-bottom -->
-<?php include 'includes/footer.php'; ?> -->
-
-
+<?php include 'includes/footer.php'; ?> 
