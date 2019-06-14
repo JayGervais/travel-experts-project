@@ -23,7 +23,7 @@ include 'includes/functions.php';
   	<tr>
   	<td>User Email</td>
   		<td class="widetd">
-  			<input type="text" id="username" name="useremail"  maxlength="50" />
+  			<input type="text" id="useremail" name="useremail"  maxlength="50" />
   			<span class="error" id="userNameError"></span></td>
   	</tr>
   	<tr>
