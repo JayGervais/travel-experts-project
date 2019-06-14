@@ -33,14 +33,10 @@ include 'includes/classes/CustomerAccount.php';
 		$createCustomerQuery = "INSERT INTO customers (CustFirstName, CustLastName, CustAddress, CustCity, CustProv, CustPostal, CustCountry, CustHomePhone, CustBusPhone, CustEmail) VALUES ('$customerFirstName', '$customerLastName', '$customerAddress', '$customerCity', '$customerProvince', '$customerPostalCode', '$customerCountry', '$customerHomePhone', '$customerBusinessPhone', '$customerEmail')";
 		$conn->query($createCustomerQuery);
 		$customerID = $conn->insert_id;
-		
-    	//get ID query 
-    	// $getIDquery = "SELECT CustomerId FROM customers WHERE CustEmail='$customerEmail'";
 
 		$tripDate = $packageStartDateDB;
 
-		$insertRecordQuery = "INSERT INTO bookings (BookingDate, BookingNo, TravelerCount, CustomerId, TripTypeId, PackageId) VALUES ('$tripDate', '', '$numberTravellers', '$customerID', '', '$packageId')";
-		
+		$insertRecordQuery = "INSERT INTO booking (BookingDate, TravelerCount, CustomerId, PackageId) VALUES ('$tripDate', '$numberTravellers', '$customerID', '$packageId')";	
     	$conn->query($insertRecordQuery);
 
 		$conn->close();	
