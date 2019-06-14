@@ -115,4 +115,31 @@ function insertDbGeneric($table_name, $form_data) {
 
 }
 
+function insertDbGeneric1($table_name, $form_data) {
+
+
+		$form_data = array(
+			'CustomerId' => '',
+			'CustFirstName' => $CustFirstName,
+			'CustLastName' => $CustLastName,
+			'CustAddress' => $CustAddress,
+			'CustCity' => $CustCity,
+			'CustProv' => $CustProv,
+			'CustCountry' => $CustCountry,
+			'CustPostal' => $CustPostal,
+			'CustHomePhone' => $CustHomePhone,
+			'CustBusPhone' => $CustBusPhone,
+			'CustEmail' => $CustEmail,
+			'CustPassword' => $CustPassword,
+		);
+	$table_name = "customers";
+
+	$fields = array_keys($form_data);
+
+	$sql = "INSERT INTO ".$table_name."(`".implode('`,`', $fields)."`) VALUES ('".implode("','", $form_data)."')";
+
+	return mysqli_query($sql);
+
+}
+
 ?>
