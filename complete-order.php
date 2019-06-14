@@ -32,20 +32,20 @@ include 'includes/classes/CustomerAccount.php';
 
 		$createCustomerQuery = "INSERT INTO customers (CustFirstName, CustLastName, CustAddress, CustCity, CustProv, CustPostal, CustCountry, CustHomePhone, CustBusPhone, CustEmail) VALUES ('$customerFirstName', '$customerLastName', '$customerAddress', '$customerCity', '$customerProvince', '$customerPostalCode', '$customerCountry', '$customerHomePhone', '$customerBusinessPhone', '$customerEmail')";
 		$conn->query($createCustomerQuery);
-
-		$customerID = $mysqli->insert_id;
+		$customerID = $conn->insert_id;
 		
     	//get ID query 
     	// $getIDquery = "SELECT CustomerId FROM customers WHERE CustEmail='$customerEmail'";
 
+		$tripDate = $packageStartDateDB;
 
-		$insertRecordQuery = "INSERT INTO bookings (BookingDate, BookingNo, TravelerCount, CustomerId, TripTypeId, PackageId) VALUES ('$packageStartDateDB', '', '$numberTravellers', '$customerID', '', '$packageId')";
+		$insertRecordQuery = "INSERT INTO bookings (BookingDate, BookingNo, TravelerCount, CustomerId, TripTypeId, PackageId) VALUES ('$tripDate', '', '$numberTravellers', '$customerID', '', '$packageId')";
 		
     	$conn->query($insertRecordQuery);
 
 		$conn->close();	
 		?>
-
+		
 		<h5 class="card-title"><?php echo $customerFirstName . " " . $customerLastName; ?></h5>
 	    <p class="card-text"><strong><?php echo $customerAddress . ", " . $customerCity . ", " . $customerProvince; ?></strong><br>
 	    <?php echo $customerCountry . ", " . $customerPostalCode; ?><br>
