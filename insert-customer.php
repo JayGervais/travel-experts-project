@@ -3,7 +3,7 @@ include 'includes/header.php';
 //include 'includes/classes/Agent.php';
 include 'includes/functions.php';
 if(!isset($_SESSION['customId'])) {
-	header("Location: login.php");
+	header("Location: customerslogin.php");
 }
 ?>
 	<div class="padding-top padding-bottom">
