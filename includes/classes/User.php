@@ -1,4 +1,7 @@
 <?php  
+# JAY GERVAIS
+// User function - originally created to display Agent data for different users. This containst the functionality for a user to delete their own account when logged in.
+
 class User {
 	private $userId;
 	private $conn;
@@ -14,7 +17,7 @@ class User {
 	public function __construct($conn, $userId) {
 		$this->conn = $conn;
 		$this->userId = $userId;
-
+		// query selects all public data for user based on id
 		$user_query = mysqli_query($conn, "SELECT * FROM agents WHERE AgentId='".$userId."'");
 			$user = mysqli_fetch_array($user_query);
 
@@ -26,6 +29,7 @@ class User {
 		$this->userPosition = $user['AgtPosition'];
 	}
 
+	// delete account function
 	function deleteAccount($conn, $userId) {
 
 		if($conn->connect_error) {

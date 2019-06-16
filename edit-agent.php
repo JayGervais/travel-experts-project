@@ -1,4 +1,7 @@
 <?php 
+# JAY GERVAIS
+// page used to edit Agent account information
+
 include 'includes/header.php'; 
 include 'forms/errorhandling.php'; 
 //include 'includes/classes/Agent.php';

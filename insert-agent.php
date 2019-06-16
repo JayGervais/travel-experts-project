@@ -1,4 +1,7 @@
 <?php 
+# JAY GERVAIS
+// page used to add new Agent information to the database
+
 include 'includes/header.php'; 
 include 'includes/classes/Agent.php';
 //include 'includes/functions.php'; 
@@ -35,11 +38,12 @@ if(!isset($_SESSION['AgentId'])) {
 			'AgencyId' => $agency,
 			'password' => $password
 		);
-
+		// send Agent data array to database with generic database function
 		$agent->insertDbGeneric($conn, $table, $form_data);
 		?>
 		<div class="agentcard">
 		<?php
+		// display information with string function
 		echo $agent->agentString();
 		?>
 		</div>

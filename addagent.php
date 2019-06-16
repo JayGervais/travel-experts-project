@@ -1,4 +1,7 @@
 <?php 
+# JAY GERVAIS
+// page used to display form to add new Agent accounts
+
 include 'includes/header.php'; 
 include 'forms/errorhandling.php'; 
 include 'includes/classes/User.php';

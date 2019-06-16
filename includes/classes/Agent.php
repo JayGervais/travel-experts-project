@@ -1,4 +1,6 @@
 <?php  
+# JAY GERVAIS
+// class used for creating new Agent objects
 class Agent {
 	private $id;
 	private $firstname;
@@ -125,6 +127,7 @@ class Agent {
 		);
 	}
 
+	// generic insert function for adding data to the database
 	function insertDbGeneric($conn, $table, $form_data) {
 		$fields = array_keys($form_data);
 		$sql = "INSERT INTO ".$table."(`".implode('`,`', $fields)."`) VALUES ('".implode("','", $form_data)."')";
@@ -133,6 +136,7 @@ class Agent {
 		}
 	}
 
+	// original function used to insert Agents into the database. It is more specified with specific table values. It also includes a function to write a record to s text file for each submission.
 	function insertAgent($conn) {
 		if($conn->connect_error) {
 			die("Connection failed: " . $conn->connect_error);
@@ -147,20 +151,23 @@ class Agent {
 		}
 		$conn->close();
 
+		// function to write a record to s text file for each submission
 		$logFile = fopen("submissionlog.txt", "a") or die ("Unable to open file");
     		$logMsg =  PHP_EOL . date("l jS \of F Y h:i:s A") . " - " . "New Agent has been added to the database: " . PHP_EOL . $this->firstname . " " . $this->middlename . " " . $this->lastname . PHP_EOL . "Phone: " . $this->phone . PHP_EOL . "Email: " . $this->email . PHP_EOL . "Position: " . $this->position . PHP_EOL . "Agency: " . $this->agency . PHP_EOL;
     		fwrite($logFile, $logMsg);
     		fclose($logFile);
 	}
 
+	// function used to update Agent information data
 	function updateAgent($conn) {
 
 		if($conn->connect_error) {
 			die("Connection failed: " . $conn->connect_error);
 		}
-
+		// checks for session with Agent id
 		$id = $_SESSION['AgentId'];
 
+		// query to update all fields in the database
 		$updateAgentQuery = "UPDATE agents SET AgtFirstName='$this->firstname', AgtMiddleInitial='$this->middlename', AgtLastName='$this->lastname', AgtBusPhone='$this->phone', AgtEmail='$this->email', AgtPosition='$this->position', AgencyId='$this->agency', password='$this->password' WHERE AgentId='$id'";
 		
     	if ($conn->query($updateAgentQuery) === TRUE) { 
@@ -171,6 +178,7 @@ class Agent {
 		$conn->close();
 	}
 
+	// function used to create a string to display Agent information back to the user after form submission
 	function agentString() { ?>
 
 		<h2><?php echo $this->firstname . " " . $this->middlename . " " . $this->lastname ?></h2>

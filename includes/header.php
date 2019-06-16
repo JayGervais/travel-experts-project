@@ -1,4 +1,6 @@
 <?php
+# JAY GERVAIS
+// includes the title, css file links, and main navigation
 include_once 'global.php';
 include_once 'connect.php';
 include_once 'components/sessions.php';

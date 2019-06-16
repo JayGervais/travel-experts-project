@@ -1,4 +1,6 @@
 <?php  
+# JAY GERVAIS
+// (Not used for group project) - This is a class used to create a customer account based on the structure of my Agent class. 
 class CustomerAccount {
 	private $customerId;
 	private $customerFirstName;
@@ -137,13 +139,13 @@ class CustomerAccount {
 		$this->customerPW = password_hash($this->customerPW, PASSWORD_DEFAULT);
 	}
 
-
+	// function used for creating a new customer account
 	function createCustomer($conn) {
 
 		if($conn->connect_error) {
 			die("Connection failed: " . $conn->connect_error);
 		}
-
+		// insert customer query
 		$createCustomerQuery = "INSERT INTO customers (CustFirstName, CustLastName, CustAddress, CustCity, CustProv, CustPostal, CustCountry, CustHomePhone, CustBusPhone, CustEmail, CustPassword) VALUES ('$this->customerFirstName', '$this->customerLastName', '$this->customerAddress', '$this->customerCity', '$this->customerProvince', '$this->customerPostalCode', '$this->customerCountry', '$this->customerHomePhone', '$this->customerBusinessPhone', '$this->customerEmail', '$this->customerPW')";
 		
     	if ($conn->query($createCustomerQuery) === TRUE) { 
@@ -154,6 +156,7 @@ class CustomerAccount {
 		$conn->close();
 	}
 
+	// update user information
 	function updateCustomer($conn) {
 
 		if($conn->connect_error) {
@@ -161,7 +164,7 @@ class CustomerAccount {
 		}
 
 		$id = $_SESSION['CustomerId'];
-
+		// if session matches customer, update all fields within database
 		$updateAgentQuery = "UPDATE customers SET CustFirstName='$this->customerFirstName', CustLastName='$this->customerLastName', CustAddress='$this->customerAddress', CustCity='$this->customerCity', CustProv='$this->customerProvince', CustPostal='$this->customerPostalCode', CustCountry='$this->customerCountry', CustHomePhone='$this->customerHomePhone', CustBusPhone='$this->customerBusinessPhone', CustEmail='$this->customerEmail', CustPassword='$this->customerPW'";
 		
     	if ($conn->query($updateCustomerQuery) === TRUE) { 
@@ -172,6 +175,7 @@ class CustomerAccount {
 		$conn->close();
 	}
 
+	// customer string used to display changes after form submission
 	function customerString() { ?>
 
 		<h2><?php echo $this->customerFirstName . " " . $this->customerLastName; ?></h2>

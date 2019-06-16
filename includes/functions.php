@@ -1,4 +1,10 @@
 <?php
+# JAY GERVAIS
+// This was my original collection of functions before re-purposing most of them into classes.
+
+# KAI FENG
+// insertDbGeneric1 was written by Kai.
+
 function agentData($conn) {
 	$query = "SELECT * FROM agents";
 	$result = $conn->query($query);
@@ -89,7 +95,6 @@ function insertAgent($conn) {
 	}
 
 }
-
 
 function insertDbGeneric($table_name, $form_data) {
 

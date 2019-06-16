@@ -1,4 +1,6 @@
-<?php include 'includes/header.php'; ?>
+<?php 
+# JAY GERVAIS
+include 'includes/header.php'; ?>
 
 <div class="padding-top">
 <div class="animation-element slide-up">

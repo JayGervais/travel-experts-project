@@ -1,4 +1,7 @@
 <?php 
+# JAY GERVAIS
+// (Not being used in group project) - this was a duplicate for me to experiment with the functionality of adding queries to multiple database tables.
+
 include 'includes/header.php'; 
 include 'includes/variables.php'; 
 include 'includes/functions.php'; 
@@ -24,9 +27,6 @@ $id = $_GET['id'];
 				// format dates
 				$packageStartDate = date_format(new DateTime($packageStartDateDB), 'd/m/Y');
 				$packageEndDate = date_format(new DateTime($packageEndDateDB), 'd/m/Y');
-
-				// calculate GST
-				//$packageTotal = ($packageBasePrice * 0.05) + $packageBasePrice;
 		}
 	?>
 	<div class="row">

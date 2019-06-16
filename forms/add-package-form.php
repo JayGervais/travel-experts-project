@@ -1,4 +1,5 @@
-<!-- Add Package Form with JS Error Handling -->
+<!-- JAY GERVAIS -->
+<!-- Form with JS Error Handling used to add Travel Package information to database -->
 <form action="insert-package.php" enctype="multipart/form-data" onsubmit="return validateAddPackageForm(this)" method="post" name="addPackageForm" id="addPackageForm" name="addPackageForm"> 
 	
 	<p id="formError" class="errorForm"></p>

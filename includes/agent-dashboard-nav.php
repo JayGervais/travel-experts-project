@@ -1,4 +1,5 @@
-<!-- Navigation -->
+<!-- JAY GERVAIS -->
+<!-- Navigation created to navigate between different sections of the Agent dashboard -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 <div class="container">
   <a class="navbar-brand" href="<?php echo $login; ?>"><?php echo $user->userFName() . " " . $user->userLName(); ?></a>

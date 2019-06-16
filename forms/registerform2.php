@@ -1,4 +1,5 @@
-<!-- Registration Form with JS Error Handling -->
+<!-- JAY GERVAIS -->
+<!-- (Not used) Registration Form with JS Error Handling used to create a customer using the CustomerAccount class (testing different methods) -->
 <form action="insert-customer2.php" onsubmit="return validateRegistrationForm(this)" method="post" name="registerForm" id="registerForm">
 
 	<p id="formError" class="errorForm"></p>

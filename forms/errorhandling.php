@@ -1,4 +1,8 @@
 <?php 
+# JAY GERVAIS
+
+// Original error handling functionality. This has since been used within different classes.
+
 // Empty error veriables
 $firstnameErr = "";
 $middlenameErr = "";

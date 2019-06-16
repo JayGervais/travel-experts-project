@@ -1,4 +1,7 @@
 <?php 
+# JAY GERVAIS
+// Used to loop through all agents in the database and display the information
+
 include 'includes/header.php'; 
 include 'includes/functions.php'; 
 ?>
@@ -7,7 +10,9 @@ include 'includes/functions.php';
 	
 	<div class="row">
 	<?php
+	// selects agent query function
 	$agentData = agentData($conn);
+	// loops through each with foreach loop
 	foreach($agentData as $row) { ?>
 		<div class="col-lg-6">
 			<div class="animation-element slide-up">

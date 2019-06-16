@@ -1,4 +1,7 @@
 <?php 
+# JAY GERVAIS
+// (not used in group project) - testing functionality of adding new Customer accounts based on class structure I used to create Agent accounts.
+
 include 'includes/header.php'; 
 include 'includes/classes/CustomerAccount.php';
 //include 'includes/functions.php'; 

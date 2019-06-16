@@ -1,4 +1,10 @@
 <?php 
+# JAY GERVAIS
+// created template with GET to display Package information for orders 
+
+# DUWA
+// created form and functionality for creating new orders
+
 include 'includes/header.php'; 
 include 'includes/variables.php'; 
 include 'includes/functions.php'; 
@@ -24,9 +30,6 @@ include 'includes/functions.php';
 				// format dates
 				$packageStartDate = date_format(new DateTime($packageStartDateDB), 'd/m/Y');
 				$packageEndDate = date_format(new DateTime($packageEndDateDB), 'd/m/Y');
-
-				// calculate GST
-				//$packageTotal = ($packageBasePrice * 0.05) + $packageBasePrice;
 		}
 	?>
 	<div class="row">

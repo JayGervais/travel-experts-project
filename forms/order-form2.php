@@ -1,4 +1,5 @@
-<!-- Registration Form with JS Error Handling -->
+<!-- JAY GERVAIS -->
+<!-- (Not used) Registration Form with JS Error Handling used to test functionality of submitting an order. -->
 <form action="complete-order.php?id=<?php echo $packageId; ?>" onsubmit="" method="post" name="addAgentForm" id="addAgentForm" name="addAgentForm"> 
 
 	<p id="formError" class="errorForm"></p>

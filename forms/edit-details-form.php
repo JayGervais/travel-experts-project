@@ -1,4 +1,5 @@
-<!-- Registration Form with JS Error Handling -->
+<!-- JAY GERVAIS -->
+<!-- Registration Form with JS Error Handling used to display and edit user details. User details are shown from an Agent object. -->
 <form action="delete-agent.php" onClick="return confirmDelete()" method="post" name="addAgentForm" id="addAgentForm" name="addAgentForm"> 
 	<button type="submit" value="submit" class="delete">Delete Account</button>
 </form>

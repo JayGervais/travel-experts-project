@@ -1,4 +1,6 @@
 <?php  
+# JAY GERVAIS
+
 // Connection variables
 $servername = "localhost";
 $username = "root";

@@ -1,4 +1,7 @@
 <?php 
+# JAY GERVAIS
+// page used to show an array of links with foreach loop
+
 include 'includes/header.php'; 
 include 'includes/variables.php'; 
 include 'includes/functions.php'; 

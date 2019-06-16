@@ -2,7 +2,7 @@
 include 'includes/header.php';
 include 'includes/functions.php';
 ?>
-<p class="agntloginlink"><a href="<?php echo $custLogin; ?>" class="agntloginlink"><?php echo $loginLogo; ?></a></p>
+<p class="agntloginlink"><a href="<?php echo $login; ?>" class="agntloginlink"><?php echo $loginLogo; ?></a></p>
 
 <div class="padding-top padding-bottom">
 

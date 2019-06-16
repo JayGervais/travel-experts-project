@@ -1,8 +1,11 @@
 <?php 
+# JAY GERVAIS
+// page used to add new Travel Packages to database.
+
 include 'includes/header.php'; 
-//include 'includes/classes/Agent.php';
 include 'includes/functions.php'; 
 
+// checks if session is set with Agent id
 if(!isset($_SESSION['AgentId'])) {
 	header("Location: login.php");
 }
@@ -10,16 +13,18 @@ if(!isset($_SESSION['AgentId'])) {
 	<div class="padding-top padding-bottom">
 		
 	<?php
+		// give variable to database table
 		$table = "packages";
-
+		// collect data from form submission for adding new packages
 		$packagename = testdata($_POST['packagename']);
 		$packagestartdate = testdata($_POST['packagestartdate']);
 		$packageenddate = testdata($_POST['packageenddate']);
 		$packagedescription = testdata($_POST['packagedescription']);
-		
+		// check if image uploaded
 		if(isset($_FILES['packageimage'])) {
 
 			$uploadOK = 1;
+			// assign variable to file name
 			$packageImageName = $_FILES['packageimage']['name'];
 
 			// Check if image is empty
@@ -40,7 +45,7 @@ if(!isset($_SESSION['AgentId'])) {
 				      $errorMessage = "Only images allowed.";
 				      $uploadOK = 0;
 	    		}
-
+	    		// if upload is okay, move files
 	    		if($uploadOK) {
 	    				if(move_uploaded_file($_FILES['packageimage']['tmp_name'], $packageImageName)) {
 			        	// image uploaded
@@ -61,9 +66,9 @@ if(!isset($_SESSION['AgentId'])) {
 
 			die("Connection failed: " . $conn->connect_error);
 			}
-
+			// insert Travel Package data into database
 			$insertPackageQuery = "INSERT INTO packages (PkgName, PkgStartDate, PkgEndDate, PkgDesc, PkgImage, PkgBasePrice, PkgAgencyCommission) VALUES ('$packagename', '$packagestartdate', '$packageenddate', '$packagedescription', '$packageImageName', '$packagebaseprice', '$packagecommission')";
-			
+			// display confirm message
 	    	if ($conn->query($insertPackageQuery) === TRUE) { 
 	    		echo "<p class='confirm'>New package has been successfully added</p>";
 			} else {

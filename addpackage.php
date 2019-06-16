@@ -1,12 +1,17 @@
 <?php 
+# JAY GERVAIS
+// created to add new Travel Packages
+
 include 'includes/header.php'; 
 include 'forms/errorhandling.php'; 
 include 'includes/classes/User.php';
 
+// check for agent id
 if(empty($_SESSION["AgentId"])) {
 	header("Location: agent-login.php");
 }
- 
+
+// create a new User object
 $user = new User($conn, $userId);
 
 include 'includes/agent-dashboard-nav.php';
